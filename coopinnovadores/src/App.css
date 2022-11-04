@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +12,16 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+=======
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+>>>>>>> devbranch
 }
 
 .App-header {
@@ -23,6 +34,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+<<<<<<< HEAD
 
 .App-link {
   color: #61dafb;
@@ -36,3 +48,5 @@
     transform: rotate(360deg);
   }
 }
+=======
+>>>>>>> devbranch

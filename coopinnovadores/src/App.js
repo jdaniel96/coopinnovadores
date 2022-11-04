@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,16 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+import "./App.css";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <div className="page-container">
+      <div className="content-wrap"></div>
+      <Footer />
+>>>>>>> devbranch
     </div>
   );
 }
