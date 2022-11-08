@@ -6,8 +6,8 @@ import Navbar from "./components/nav/navbar";
 function App() {
   return (
     <div className="page-container">
-      <Navbar/>
-      <Herosection/>
+      <Navbar />
+      <Herosection />
       <Footer />
     </div>
   );
