@@ -1,20 +1,19 @@
+import React from "react";
 import "./App.css";
-import Footer from "./components/Footer";
-import Herosection from "./components/hero/herosection";
+import Footer from "./components/footer/footer";
+import HeroSection from "./components/hero/herosection";
 import Navbar from "./components/nav/navbar";
-import Cards from "./components/Cards/Cards";
-import ContactUs from "./components/Contact/Contact";
+import Cards from "./components/cards/cards";
+import ContactUs from "./components/contact/contact";
 
-function App() {
+export default function App() {
   return (
     <div className="page-container">
       <Navbar />
-      <Herosection />
+      <HeroSection />
       <Cards />
       <ContactUs />
       <Footer />
     </div>
   );
 }
-
-export default App;

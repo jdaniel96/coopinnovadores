@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { contactConfig } from "./content_option";
-import "./Contact.css";
+import "./contact.css";
+
 function ContactUs() {
   return (
-    <Container className="contact_container mb-4">
+    <Container className="contact_container mb-4 rounded">
       <Row className="mb-5 mt-3">
         <Col lg="8">
           <h1 className="display-4 mb-4">Contact Section</h1>
@@ -24,44 +25,16 @@ function ContactUs() {
           </address>
           <p className="blockquote">{contactConfig.description}</p>
         </Col>
-        <Col lg="7" className="d-flex align-items-center">
-          <form className="contact__form w-100">
-            <Row>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  type="text"
-                />
-              </Col>
-              <Col lg="6" className="form-group">
-                <input
-                  className="form-control rounded-0"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                />
-              </Col>
-            </Row>
-            <textarea
-              className="form-control rounded-0"
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="5"
-            ></textarea>
-            <br />
-            <Row>
-              <Col lg="12" className="form-group">
-                <button className="btn btn-light" type="submit">
-                  Send
-                </button>
-              </Col>
-            </Row>
-          </form>
+        <Col>
+          <iframe
+            title="myFrame"
+            id="mapa"
+            className="gmap_iframe"
+            width="90%"
+            height="80%"
+            margin="15px"
+            src="https://maps.google.com/maps?width=636&amp;height=1000&amp;hl=en&amp;q=Simbawey&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
         </Col>
       </Row>
     </Container>

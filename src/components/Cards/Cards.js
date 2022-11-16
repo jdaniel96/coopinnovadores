@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Card from "./Card/Card";
-import "./Cards.css";
+import Card from "./card/card";
+import "./cards.css";
 
 const Cards = () => {
   const [cards, setCards] = useState([
