@@ -5,7 +5,7 @@ import "./contact.css";
 
 function ContactUs() {
   return (
-    <Container className="contact_container mb-4 rounded">
+    <Container className="contact_container mb-4 rounded" id="contactanos">
       <Row className="mb-5 mt-3">
         <Col lg="8">
           <h1 className="display-4 mb-4">Contact Section</h1>

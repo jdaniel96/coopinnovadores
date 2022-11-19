@@ -37,13 +37,13 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#contactanos">
                     Contactanos
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Otra Cosa
+                  <a className="nav-link" href="#registrate">
+                    Registrate
                   </a>
                 </li>
               </ul>

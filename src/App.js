@@ -1,18 +1,19 @@
 import React from "react";
 import "./App.css";
+import Home from "./views/homeView";
+import Register from "./views/registerView";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "../src/components/nav/navbar";
 import Footer from "./components/footer/footer";
-import HeroSection from "./components/hero/herosection";
-import Navbar from "./components/nav/navbar";
-import Cards from "./components/cards/cards";
-import ContactUs from "./components/contact/contact";
 
 export default function App() {
   return (
     <div className="page-container">
       <Navbar />
-      <HeroSection />
-      <Cards />
-      <ContactUs />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
       <Footer />
     </div>
   );
