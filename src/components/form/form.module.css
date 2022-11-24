@@ -1,0 +1,54 @@
+.formSection {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("./assets/fondo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 884px) {
+  .formSection {
+    background-position: center;
+  }
+}
+
+.contenido {
+  min-height: 70vh;
+  width: 85%;
+  background-color: white;
+  box-shadow: 0px 0px 13px 6px rgba(37, 37, 37, 0.26);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 884px) and (max-height: ) {
+  .formSection {
+    background-position: center;
+  }
+}
+.infContainer {
+  padding: 2rem;
+}
+.formImg {
+  width: 98%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 65vh;
+  padding: 2rem;
+  color: #56c569;
+}
+.textContent h2 {
+  color: #56c569;
+}
+
+.btnColor {
+  background-color: #56c569;
+  border-color: #56c569;
+}
