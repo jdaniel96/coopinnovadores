@@ -7,7 +7,7 @@ function Navbar() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/#">
               COOPERATIVA
             </a>
             <button
@@ -27,30 +27,23 @@ function Navbar() {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link active" aria-current="page" href="/#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/#">
                     Acerca
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#contactanos">
+                  <a className="nav-link" href="/#">
                     Contactanos
                   </a>
                 </li>
-                <li
-                  className="nav-item"
-                  style={{
-                    backgroundColor: "#56c569",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <a
-                    className="nav-link"
-                    href="/register"
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Registrate
+                <li className="nav-item">
+                  <a className="nav-link" href="/#">
+                    Otra Cosa
                   </a>
                 </li>
               </ul>

@@ -6,7 +6,11 @@ const Card = (props) => {
       <div className="text-center card-box">
         <div className="member-card pt-2 pb-2">
           <div className="thumb-lg member-thumb mx-auto">
-            <img src={props.img} className="img-thumbnail" alt="image" />
+            <img
+              src={props.img}
+              className="img-thumbnail"
+              alt="cooperativaImage"
+            />
           </div>
           <div>
             <h4>{props.name}</h4>
