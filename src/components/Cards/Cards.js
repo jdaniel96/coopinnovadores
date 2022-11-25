@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./card/card";
 import "./cards.css";
 
 const Cards = () => {
-  const [cards, setCards] = useState([
+  const cards = [
     {
       id: 1,
       name: "Hazte Socio",
@@ -22,7 +22,7 @@ const Cards = () => {
       role: "Something here",
       img: "https://cdn-icons-png.flaticon.com/512/3135/3135706.png",
     },
-  ]);
+  ];
 
   return (
     <div className="row">

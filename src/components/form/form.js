@@ -69,11 +69,6 @@ function Form() {
       });
   };
 
-  console.log("el nombre es: ", typeof inputs.nombre);
-  console.log("el apellido es: ", inputs.apellido);
-  console.log("la cedula es: ", inputs.cedula);
-  console.log("el correo es: ", inputs.correo);
-
   return (
     <>
       <Navbar />
