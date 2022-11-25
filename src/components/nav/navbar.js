@@ -1,4 +1,4 @@
-import "./navbar.css";
+import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
 
 function Navbar({ Hero, Card, Contact }) {
@@ -13,10 +13,9 @@ function Navbar({ Hero, Card, Contact }) {
       (entries, objInt) => {
         if (!entries[0].isIntersecting) setIsVisible(true);
         if (entries[0].isIntersecting) setIsVisible(false);
-        //TODO show navbar when hero section is not intersecting
       },
       {
-        threshold: 0.2,
+        threshold: 0.1,
         root: null,
       }
     );
@@ -32,9 +31,9 @@ function Navbar({ Hero, Card, Contact }) {
 
   return (
     <>
-      <header className="header">
+      <header className={isVisible?`${styles.header} ${styles.active}`:`${styles.header}`}>
         <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light">
+          <nav className={isVisible?`navbar navbar-expand-lg ${styles.alt} ${styles.animation}`:`navbar navbar-expand-lg navbar-dark ${styles.alt}`}>
             <div className="container-fluid">
               <a className="navbar-brand" href="/#">
                 COOPERATIVA

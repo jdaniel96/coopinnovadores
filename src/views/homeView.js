@@ -7,7 +7,7 @@ import Navbar from "../components/nav/navbar";
 function Home() {
   return (
     <>
-      <Navbar Hero={HeroSection} Card={Cards} Contact={ContactUs} />
+      <Navbar Hero={HeroSection} Card={Cards} Contact={ContactUs}/>
     </>
   );
 }

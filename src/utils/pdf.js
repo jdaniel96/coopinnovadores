@@ -1,7 +1,5 @@
 import React from "react";
-import Pdf from "react-to-pdf";
-<<<<<<< HEAD
-import { useRef } from "react";
+import { useRef, Pdf} from "react";
 
 const PDF = ({ nombre, apellido, correo, cedula, reference }) => {
   const formRef = useRef();
@@ -36,10 +34,6 @@ const PDF = ({ nombre, apellido, correo, cedula, reference }) => {
     return true;
   };
 
-=======
-
-const PDF = ({ nombre, apellido, correo, cedula, reference }) => {
->>>>>>> main
   return (
     <Pdf targetRef={pdfTemplate} filename="post.pdf">
       {({ toPdf }) => (
