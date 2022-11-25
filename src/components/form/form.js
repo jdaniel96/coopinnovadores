@@ -2,12 +2,9 @@ import styles from "./form.module.css";
 import React, { useState } from "react";
 import axios from "axios";
 import formImg from "./assets/img.png";
-import Navbar from "../nav/navbar";
 import PDF from "../../utils/pdf";
-import { useRef } from "react";
 
 function Form() {
-  const formRef = useRef();
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -71,7 +68,6 @@ function Form() {
 
   return (
     <>
-      <Navbar />
       <section className={styles.formSection}>
         <div className={styles.contenido}>
           <div className="row row-cols-1 row-cols-sm-2">
@@ -98,11 +94,7 @@ function Form() {
                 <h4>
                   <b>Formulario de inscripcion</b>
                 </h4>
-                <form
-                  ref={formRef}
-                  className="row g-3"
-                  onSubmit={handleOnSubmit}
-                >
+                <form className="row g-3" onSubmit={handleOnSubmit}>
                   <div className="col-md-6">
                     <label for="nombre" className="form-label">
                       <b>Nombre</b>
@@ -173,7 +165,7 @@ function Form() {
                       apellido={inputs.apellido}
                       correo={inputs.correo}
                       cedula={inputs.cedula}
-                      reference={formRef.current}
+                      // reference={formRef.current}
                     />
                   </div>
                 </form>
