@@ -1,7 +1,7 @@
 import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
 
-function Navbar({ Hero, Card, Contact }) {
+function Navbar({ Hero, Card, Contact, Formulario }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
@@ -94,8 +94,11 @@ function Navbar({ Hero, Card, Contact }) {
       <div ref={card}>
         <Card />
       </div>
-      <div ref={contact}>
+      <div>
         <Contact />
+      </div>
+      <div ref={contact}>
+        <Formulario />
       </div>
     </>
   );
