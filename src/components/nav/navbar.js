@@ -1,12 +1,13 @@
 import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
 
-function Navbar({ Hero, Card, Contact, Formulario }) {
+function Navbar({ Hero, Card, Contact, Formulario, Gridgallery}) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
   const card = useRef();
   const contact = useRef();
+  const gallery = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -106,6 +107,9 @@ function Navbar({ Hero, Card, Contact, Formulario }) {
       </div>
       <div>
         <Contact />
+      </div>
+      <div ref={gallery}>
+        <Gridgallery />
       </div>
       <div ref={contact}>
         <Formulario />

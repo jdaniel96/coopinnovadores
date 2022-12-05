@@ -1,0 +1,54 @@
+.prueba{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.gallery{
+    height: auto;
+    width: 90%;
+    background-color: white;
+}
+
+.contenedor{
+    min-height: 20rem;
+    width: 85%;
+    position: relative;
+    padding-top: 30px;
+}
+.iconSize{
+    height: 70px;
+    width: 70px;
+}
+.contenedor::before{
+    content:' ';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: green; 
+    top: 1rem;
+}
+.contenedor a:link, a:visited, a:active {
+    text-decoration:none;
+    color: green;
+}
+.arrow {
+    margin-left: 30px;
+}
+.contenedor2{
+    background-color: green;
+}
+.bodyCard{
+    width: 84%;
+    height: 16rem;
+}
+.linea{
+    position: relative;
+}
+.linea::before {
+    content:' ';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: green; 
+    top: -10px;
+ }
