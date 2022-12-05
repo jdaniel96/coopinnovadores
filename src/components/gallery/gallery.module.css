@@ -1,5 +1,5 @@
-.prueba{
-    min-height: 100vh;
+.gallerySection{
+    min-height: 85vh;
     width: 100%;
 }
 
@@ -13,11 +13,13 @@
     min-height: 20rem;
     width: 85%;
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .iconSize{
     height: 70px;
     width: 70px;
+    font-size: 25px;
+    color: white;
 }
 .contenedor::before{
     content:' ';
@@ -34,9 +36,6 @@
 .arrow {
     margin-left: 30px;
 }
-.contenedor2{
-    background-color: green;
-}
 .bodyCard{
     width: 84%;
     height: 16rem;
@@ -51,4 +50,7 @@
     width: 50px;
     background-color: green; 
     top: -10px;
+ }
+ @media screen and (max-width: 768px){
+    .contenedor{ width: 100%;}
  }

@@ -11,7 +11,7 @@ function Cards (props){
         <div className="col">
             <div class={`${Styles.bodyCard} d-flex flex-column justify-content-evenly`}>
                 <div className={`rounded-circle ${Styles.iconSize} d-flex justify-content-center align-items-center`} style={cardStyles.icon}>
-
+                    {props.iconImg}
                 </div>
                 <h6>{props.cardTitle}</h6>
                 <div className={Styles.linea}>
