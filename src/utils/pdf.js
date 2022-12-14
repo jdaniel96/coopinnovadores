@@ -1,55 +1,21 @@
+import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
 import React from "react";
-import { useRef, Pdf} from "react";
+import { useRef, Pdf } from "react";
+import { RegisterFormTemplate } from "../components/registerFormTemplate/registerFormTemplate";
 
-const PDF = ({ nombre, apellido, correo, cedula, reference }) => {
-  const formRef = useRef();
-
-  const pdfTemplate = (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-      ref={formRef.current}
-    >
-      <h1>CONTRACT TEST OMG JAJAJA WTF </h1>
-      <h2>{nombre}</h2>
-      <h2>{apellido}</h2>
-      <h2>{cedula}</h2>
-      <h2>{correo}</h2>
-    </div>
-  );
-
-  const validateInputs = () => {
-    if (
-      nombre.length === 0 ||
-      apellido.length === 0 ||
-      correo.length === 0 ||
-      cedula.length === 0
-    ) {
-      return false;
-    }
-
-    return true;
-  };
-
+const PDF = () => {
   return (
-    <Pdf targetRef={pdfTemplate} filename="post.pdf">
-      {({ toPdf }) => (
-        <button
-          type="button"
-          className="btn btn-dark"
-          onClick={(e) => {
-            e.preventDefault();
-            const validation = validateInputs();
-            if (validation) toPdf();
-          }}
-        >
-          Guardar como PDF
-        </button>
-      )}
-    </Pdf>
+    // <PDFDownloadLink
+    //   document={<RegisterFormTemplate />}
+    //   filename="formularioDeInscripción.pdf"
+    // >
+    //   <button type="button" className="btn btn-dark">
+    //     Descargar Formulario
+    //   </button>
+    // </PDFDownloadLink>
+    <PDFViewer style={{ width: "100vw", height: "100vh" }}>
+      <RegisterFormTemplate />
+    </PDFViewer>
   );
 };
 

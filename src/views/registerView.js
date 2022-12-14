@@ -1,8 +1,9 @@
 import React from "react";
-import Form from "../components/form/form";
+// import Form from "../components/form/form";
+import PDF from "../utils/pdf";
 
 function Register() {
-  return <Form />;
+  return <PDF />;
 }
 
 export default Register;
