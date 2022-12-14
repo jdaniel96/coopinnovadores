@@ -124,18 +124,6 @@ function Navbar({ Hero, WhoWeAre, Formulario, Gridgallery, AboutUs }) {
           />
         </div>
       )}
-<<<<<<< HEAD
-      {Card && (
-        <div ref={card}>
-          <Card />
-        </div>
-      )}
-
-      {Contact && (
-        <div>
-          <Contact />
-        </div>
-      )}
 
       {Gridgallery && (
         <div>
@@ -147,24 +135,6 @@ function Navbar({ Hero, WhoWeAre, Formulario, Gridgallery, AboutUs }) {
           <Formulario />
         </div>
       )}
-=======
-
-      {Gridgallery && (
-        <div>
-          <Gridgallery />
-        </div>
-      )}
-      {Formulario && (
-        <div>
-          <Formulario />
-        </div>
-      )}
-      {AboutUs && (
-        <div>
-          <AboutUs />
-        </div>
-      )}
->>>>>>> refs/remotes/origin/main
     </>
   );
 }
