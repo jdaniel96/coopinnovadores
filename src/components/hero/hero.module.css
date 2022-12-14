@@ -1,0 +1,174 @@
+header {
+    position: relative;
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/herofondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sizeCarusel{
+    height: 100%;
+    width: 100%;
+}
+.colortest{
+    width: 100%;
+    height: 100%;
+}
+.heroContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.textContainer{
+    width: 50%;
+    height: 70%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heroImgContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroImgContainer img{
+    width: 80%;
+}
+.innerHeader {
+    padding-top: 90px;
+    min-height: 90vh;
+    width: 100%;
+}
+.textPosition{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.textPosition h1 {
+    font-weight: 300;
+    font-size: 70px;
+    color: black;
+    letter-spacing: 4px;
+    color: white;
+}
+.textPosition h1 b {
+    color: var(--tercerColor);
+}
+.textPosition p {
+    font-family: Quicksand, "Segoe UI", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 2px;
+}
+.buttonss button {
+    border-style: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: var(--tercerColor);
+    color: white;
+}
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width : 950px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+    .innerHeader {
+        padding-top: 90px;
+        padding-bottom: 30px;
+        height: auto;
+    }  
+    .heroImgContainer img{
+        width: 100%;
+    }
+    .heroImgContainer {
+        width: 55%;
+    }
+    .textContainer{
+        width: 45%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .textPosition {
+        gap: 10px;
+    }
+    .textPosition h1 {
+        font-size: 30px;
+    }
+    .textPosition p {
+        font-size: 15px;
+    }
+}

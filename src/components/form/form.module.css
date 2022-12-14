@@ -5,9 +5,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/cover-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .contenedor{
    width: 49rem;
@@ -15,18 +12,11 @@
 /* =================================== Area informativa =================================== */
 .textContainer{
    width: 24em;
-    padding: 10px;
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+   padding: 10px;
+   height: 40rem;
 }
 
-.frase{
-   color: green;
-   position: relative;
-   font-size: 0.9rem;
-}
+.frase{ color: var(--tercerColor); font-size: 0.9rem; }
 
 .frase::before {
    content:' ';
@@ -37,11 +27,7 @@
    top: -1rem;   
 }
 
-.contactUsTitle{
-   color: white;
-   font-size: 3rem;
-   position: relative;
-}
+.contactUsTitle{ color: white; font-size: 3rem;}
 
 .contactUsTitle::before {
    content:' ';
@@ -52,34 +38,24 @@
    top: -0.8rem; 
 }
 
-.contactUsText{
-   color: white;
-   font-size: 1.1rem;
-   position: relative;
-}
+.contactUsText{ color: white; font-size: 1.1rem;}
 
 .contactUsText::before {
    content:' ';
    position: absolute;
    height: 3px;
    width: 37px;
-   background-color: green; 
+   background-color: var(--tercerColor); 
    top: -1rem; 
 }
 
 /* =================================== redes sociales etc =================================== */
-.contactUsText2{
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-}
+.contactUsText2{width: 100%;}
+
 .contactUsText2 .cont1{
    width: 50%;
    height: 14.5rem;
    padding-top: 18px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
    border-right: 0.5px solid gray;
 }
 
@@ -88,8 +64,6 @@
    width: 50%;
    height: 14.5rem;
    padding-top: 18px;
-   display: flex;
-   flex-direction: column;
 }
 
 .listItem{
@@ -99,7 +73,7 @@
 }
 .listIcon{
    font-size: 15px;
-   color: green;
+   color: var(--tercerColor);
    margin-right: 10px;
 }
 
@@ -165,7 +139,7 @@
    position: absolute;
    height: 3px;
    width: 40px;
-   background-color: green;
+   background-color: var(--tercerColor);
    top: -0.9rem; 
  }
 
@@ -200,7 +174,7 @@
    border-radius: 20px;
    border-style: none;
    color: white;
-   background-color: green;
+   background-color: var(--tercerColor);
    font-size: 0.8rem;
  }
 

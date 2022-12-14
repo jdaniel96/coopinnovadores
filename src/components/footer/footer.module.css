@@ -13,11 +13,11 @@ footer{
    letter-spacing: 0.2px;
 }
 .area a { color: black;}
-.area h3 { font-size: 1.5em;}
+.area h3 { font-size: 1.5em; color: var(--segundoColor);}
 .logoArea{ height: 4.375em;}
 
 .color{
-   background-image: radial-gradient(circle at 44.4% 114%, #a5fc1b 0, #87f61d 16.67%, #60ee1c 33.33%, #1ae31a 50%, #00d81c 66.67%, #00ce24 83.33%, #00c730 100%);
+   background-color: var(--tercerColor);
    height: 2.813rem;
    width: 2.813rem;
    font-size: 30px;
@@ -27,6 +27,7 @@ footer{
    font-size: 1.8rem;
    margin-left: 0.75rem;
    margin-top:0.375rem;
+   color: var(--segundoColor);
 }
 
 .area2{
@@ -38,6 +39,7 @@ footer{
 .listContainer h4 {
    font-size: 1.4em;
    margin-bottom: 35px;
+   color:var(--segundoColor);
 }
 
 li{
@@ -48,7 +50,7 @@ li{
 .emailBtn{
    height: 3.438rem;
    background-color: white;
-   border: 1px solid green;
+   border: 1px solid var(--segundoColor);
    border-radius: 1.875em;
    font-size: 1.2em;
    padding-left: 1.438em;
@@ -62,7 +64,7 @@ li{
    width: 45%;
    font-size: 1.563rem;
 }
-.autor{ color: #00ce24; }
+.autor{ color: var(--segundoColor); }
 
 @media screen and (max-width: 991px){
    .listContainer{width: 30%;}

@@ -15,6 +15,9 @@
     position: relative;
     padding-top: 20px;
 }
+.contenedor h1 {
+    color: var(--segundoColor);
+}
 .iconSize{
     height: 70px;
     width: 70px;
@@ -26,12 +29,12 @@
     position: absolute;
     height: 4px;
     width: 50px;
-    background-color: green; 
+    background-color: var(--segundoColor);; 
     top: 1rem;
 }
 .contenedor a:link, a:visited, a:active {
     text-decoration:none;
-    color: green;
+    color: var(--segundoColor);;
 }
 .arrow {
     margin-left: 30px;
@@ -48,7 +51,7 @@
     position: absolute;
     height: 3px;
     width: 50px;
-    background-color: green; 
+    background-color: var(--segundoColor);; 
     top: -10px;
  }
  @media screen and (max-width: 768px){

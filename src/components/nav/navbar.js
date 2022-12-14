@@ -1,13 +1,13 @@
 import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
+import AboutUsInfromation from "../aboutUs/information/information"
 
-function Navbar({ Hero, Card, Contact, Formulario, Gridgallery}) {
+function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
   const card = useRef();
   const contact = useRef();
-  const gallery = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,9 +32,9 @@ function Navbar({ Hero, Card, Contact, Formulario, Gridgallery}) {
 
   return (
     <>
-      <header
+      <div
         className={
-          isVisible ? `${styles.header} ${styles.active}` : `${styles.header}`
+          isVisible ? `${styles.navHeader} ${styles.active}` : `${styles.navHeader}`
         }
       >
         <div className="container">
@@ -42,10 +42,10 @@ function Navbar({ Hero, Card, Contact, Formulario, Gridgallery}) {
             className={
               isVisible
                 ? `navbar navbar-expand-lg ${styles.alt} ${styles.animation}`
-                : `navbar navbar-expand-lg navbar-dark ${styles.alt}`
+                : `navbar navbar-expand-lg ${styles.alt}`
             }
           >
-            <div className="container-fluid">
+            <div className={`container-fluid ${styles.navListColor}`}>
               <a className="navbar-brand" href="/#">
                 COOPERATIVA
               </a>
@@ -89,31 +89,49 @@ function Navbar({ Hero, Card, Contact, Formulario, Gridgallery}) {
                     </h1>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/register">
+                    <h1 className="nav-link" href="/register">
                       Registrate
-                    </a>
+                    </h1>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         </div>
-      </header>
-      <div ref={hero}>
+      </div>
+      {Hero &&
+        <div ref={hero}>
         <Hero />
-      </div>
-      <div ref={card}>
+      </div>}
+      {WhoWeAre &&
+        <div>
+        <WhoWeAre 
+        title={AboutUsInfromation.whoWeAre.title} 
+        textInfo={AboutUsInfromation.whoWeAre.textInfo} 
+        sectionImg={AboutUsInfromation.whoWeAre.sectionImg}
+        />
+      </div>}
+      {Card &&
+        <div ref={card}>
         <Card />
-      </div>
-      <div>
+      </div>}
+
+      {Contact &&
+        <div>
         <Contact />
       </div>
-      <div ref={gallery}>
+      }
+      
+      {Gridgallery &&
+        <div>
         <Gridgallery />
       </div>
-      <div ref={contact}>
+      }
+      {Formulario &&
+        <div ref={contact}>
         <Formulario />
       </div>
+      }
     </>
   );
 }

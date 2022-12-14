@@ -5,11 +5,12 @@ import React from "react";
 import Navbar from "../components/nav/navbar";
 import Form from "../components/form/form";
 import Gallery from "../components/gallery/gallery";
+import WhoWeAre from "../components/aboutUs/aboutUsComponents/whoWeAre&Why";
 
 function Home() {
   return (
     <>
-      <Navbar Hero={HeroSection} Card={Cards} Contact={ContactUs} Formulario={Form} Gridgallery={Gallery}/>
+      <Navbar Hero={HeroSection} WhoWeAre={WhoWeAre} Formulario={Form} Gridgallery={Gallery}/>
     </>
   );
 }

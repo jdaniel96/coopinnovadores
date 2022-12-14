@@ -67,17 +67,17 @@ function Form() {
           });
       };
     return (
-        <section className={Styles.cover}>
+        <section className={`align-items-center justify-content-center d-flex ${Styles.cover}`}>
             <div class={`${Styles.contenedor}`}>
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col">
                         {/* area informativa */}
-                        <div className={`${Styles.textContainer}`}>
-                            <h6 className={Styles.frase}>{contactConfig.frase}</h6>
-                            <h2 className={Styles.contactUsTitle}>Contact Us</h2>
-                            <p className={Styles.contactUsText}>{contactConfig.description}</p>
-                            <div className={`${Styles.contactUsText2}`}>
-                                <div className={Styles.cont1}>
+                        <div className={`justify-content-evenly flex-column d-flex ${Styles.textContainer}`}>
+                            <h6 className={`position-relative ${Styles.frase}`}>{contactConfig.frase}</h6>
+                            <h2 className={`position-relative ${Styles.contactUsTitle}`}>Contact Us</h2>
+                            <p className={`position-relative ${Styles.contactUsText}`}>{contactConfig.description}</p>
+                            <div className={`justify-content-between d-flex ${Styles.contactUsText2}`}>
+                                <div className={`justify-content-between flex-column d-flex ${Styles.cont1}`}>
                                     <b>REACH US THROUGH</b>
                                     <br/>
                                     <>
@@ -88,7 +88,7 @@ function Form() {
                                     })}
                                     </>
                                 </div>
-                                <div className={Styles.cont2}>
+                                <div className={`flex-column d-flex ${Styles.cont2}`}>
                                     <b>SOCIAL NETWORKS</b>
                                     <br/>
                                     <>
