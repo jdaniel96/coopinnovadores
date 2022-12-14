@@ -4,21 +4,30 @@ import Styles from "./hero.module.css";
 import HeroInfo from "./heroInfo/heroInfo";
 import HeroItems from "./heroItems";
 
-function Herosection() {
+function HeroSection() {
   return (
     <header>
-      <div id="carousel" className={`${Styles.innerHeader} carousel slide carousel-fade`} data-bs-ride="carousel">
+      <div
+        id="carousel"
+        className={`${Styles.innerHeader} carousel slide carousel-fade`}
+        data-bs-ride="carousel"
+      >
         <div className={`carousel-inner ${Styles.sizeCarusel}`}>
-          {HeroInfo.map((item, index)=> {
+          {HeroInfo.map((item, index) => {
             return (
-              <HeroItems title={item.title} textInfo={item.textinfo} heroImg={item.heroImg}/>
-            )
+              <HeroItems
+                key={index}
+                title={item.title}
+                textInfo={item.textinfo}
+                heroImg={item.heroImg}
+              />
+            );
           })}
         </div>
       </div>
-      <SvgComponent/>
+      <SvgComponent />
     </header>
-  )
+  );
 }
 
-export default Herosection;
+export default HeroSection;

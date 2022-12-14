@@ -2,7 +2,7 @@ import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
 import AboutUsInfromation from "../aboutUs/information/information";
 
-function Navbar({ Hero, WhoWeAre, Card, Contact, Formulario, Gridgallery }) {
+function Navbar({ Hero, WhoWeAre, Formulario, Gridgallery, AboutUs }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
@@ -124,6 +124,7 @@ function Navbar({ Hero, WhoWeAre, Card, Contact, Formulario, Gridgallery }) {
           />
         </div>
       )}
+<<<<<<< HEAD
       {Card && (
         <div ref={card}>
           <Card />
@@ -146,6 +147,24 @@ function Navbar({ Hero, WhoWeAre, Card, Contact, Formulario, Gridgallery }) {
           <Formulario />
         </div>
       )}
+=======
+
+      {Gridgallery && (
+        <div>
+          <Gridgallery />
+        </div>
+      )}
+      {Formulario && (
+        <div>
+          <Formulario />
+        </div>
+      )}
+      {AboutUs && (
+        <div>
+          <AboutUs />
+        </div>
+      )}
+>>>>>>> refs/remotes/origin/main
     </>
   );
 }

@@ -3,13 +3,8 @@ import Navbar from "../components/nav/navbar";
 import HeroSection from "../components/hero/herosection";
 import AboutUs from "../components/aboutUs/aboutUs";
 
-function aboutUsView() {
-  return (
-    <>
-    <Navbar Hero={HeroSection}/>
-    <AboutUs/>
-    </>
-  );
+function AboutUsView() {
+  return <Navbar AboutUs={AboutUs} Hero={HeroSection} />;
 }
 
-export default aboutUsView;
+export default AboutUsView;
