@@ -1,8 +1,8 @@
 import styles from "./navbar.module.css";
 import React, { useRef, useState, useEffect } from "react";
-import AboutUsInfromation from "../aboutUs/information/information"
+import AboutUsInfromation from "../aboutUs/information/information";
 
-function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
+function Navbar({ Hero, WhoWeAre, Card, Contact, Formulario, Gridgallery }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
@@ -34,7 +34,9 @@ function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
     <>
       <div
         className={
-          isVisible ? `${styles.navHeader} ${styles.active}` : `${styles.navHeader}`
+          isVisible
+            ? `${styles.navHeader} ${styles.active}`
+            : `${styles.navHeader}`
         }
       >
         <div className="container">
@@ -46,7 +48,7 @@ function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
             }
           >
             <div className={`container-fluid ${styles.navListColor}`}>
-              <a className="navbar-brand" href="/#">
+              <a style={{ color: "green" }} className="navbar-brand" href="/#">
                 COOPERATIVA
               </a>
               <button
@@ -66,16 +68,21 @@ function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
               >
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a
+                    <h1
+                      style={{ color: "white" }}
                       className="nav-link active"
                       aria-current="page"
                       href="/#"
                     >
                       Home
-                    </a>
+                    </h1>
                   </li>
                   <li className="nav-item">
-                    <h1 onClick={() => showOnPage(card)} className="nav-link">
+                    <h1
+                      style={{ color: "white" }}
+                      onClick={() => showOnPage(card)}
+                      className="nav-link"
+                    >
                       Acerca
                     </h1>
                   </li>
@@ -83,13 +90,17 @@ function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
                     <h1
                       onClick={() => showOnPage(contact)}
                       className="nav-link"
-                      href="/#"
+                      style={{ color: "white" }}
                     >
                       Contactanos
                     </h1>
                   </li>
                   <li className="nav-item">
-                    <h1 className="nav-link" href="/register">
+                    <h1
+                      style={{ color: "white" }}
+                      className="nav-link"
+                      href="/register"
+                    >
                       Registrate
                     </h1>
                   </li>
@@ -99,39 +110,42 @@ function Navbar({ Hero,WhoWeAre ,Card, Contact, Formulario, Gridgallery}) {
           </nav>
         </div>
       </div>
-      {Hero &&
+      {Hero && (
         <div ref={hero}>
-        <Hero />
-      </div>}
-      {WhoWeAre &&
+          <Hero />
+        </div>
+      )}
+      {WhoWeAre && (
         <div>
-        <WhoWeAre 
-        title={AboutUsInfromation.whoWeAre.title} 
-        textInfo={AboutUsInfromation.whoWeAre.textInfo} 
-        sectionImg={AboutUsInfromation.whoWeAre.sectionImg}
-        />
-      </div>}
-      {Card &&
+          <WhoWeAre
+            title={AboutUsInfromation.whoWeAre.title}
+            textInfo={AboutUsInfromation.whoWeAre.textInfo}
+            sectionImg={AboutUsInfromation.whoWeAre.sectionImg}
+          />
+        </div>
+      )}
+      {Card && (
         <div ref={card}>
-        <Card />
-      </div>}
+          <Card />
+        </div>
+      )}
 
-      {Contact &&
+      {Contact && (
         <div>
-        <Contact />
-      </div>
-      }
-      
-      {Gridgallery &&
+          <Contact />
+        </div>
+      )}
+
+      {Gridgallery && (
         <div>
-        <Gridgallery />
-      </div>
-      }
-      {Formulario &&
+          <Gridgallery />
+        </div>
+      )}
+      {Formulario && (
         <div ref={contact}>
-        <Formulario />
-      </div>
-      }
+          <Formulario />
+        </div>
+      )}
     </>
   );
 }
