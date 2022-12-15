@@ -10,7 +10,7 @@ import {
 
 import coopLogo from "./assets/cooplogo.png";
 
-export const RegisterFormTemplate = ({ name, cedula, id }) => {
+export const RegisterFormTemplate = () => {
   const styles = StyleSheet.create({
     page: {
       flexDirection: "row",
@@ -56,16 +56,26 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
             <Text style={styles.underlined}>mm</Text> /{" "}
             <Text style={styles.underlined}>yyyy</Text>
           </Text>
-
-          <Text
+          <View
             style={{
               alignSelf: "flex-start",
-              fontSize: 11,
               marginLeft: 25,
+              flexDirection: "row",
+              alignItems: "center",
             }}
           >
-            Socio No. <Text style={styles.underlined}>{`___${id}____`}</Text>
-          </Text>
+            <Text style={{ fontSize: 12, fontWeight: "bold" }}>Socio No.</Text>
+            <Text
+              style={{
+                fontSize: 11,
+                textAlign: "center",
+                borderBottomColor: "black",
+                borderBottomWidth: 1,
+              }}
+            >
+              waos
+            </Text>
+          </View>
           <Text
             style={{
               alignSelf: "flex-start",
@@ -88,7 +98,6 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
               fontSize: 9,
             }}
           >
-            {/* from here example */}
             <View style={{ flexDirection: "row" }}>
               <Text>NOMBRE Y APPELLIDO:</Text>
               <Text
@@ -97,54 +106,144 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
                   borderBottomColor: "black",
                   borderBottomWidth: 1,
                   flex: 1,
+                  marginBottom: 15,
+                  color: "blue",
                 }}
               >
                 actual info ajaja waos
               </Text>
             </View>
-            {/* to here */}
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              SEXO M () F (), CÉDULA/PASAPORTE:
-              __________________________________________
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              DIRECCIÓN:
-              <Text style={styles.underlined}>
-                ________________________________________________________________
+
+            <View style={{ flexDirection: "row" }}>
+              <Text>SEXO M () F (), CÉDULA/PASAPORTE:</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                }}
+              >
+                asdasda
               </Text>
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              TELÉFONOS:{" "}
-              <Text style={styles.underlined}>
-                ______________________________
-              </Text>{" "}
-              /
-              <Text style={styles.underlined}>
-                ________________________________
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text>DIRECCIÓN:</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                }}
+              >
+                asdasda
               </Text>
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              EMAIL:{" "}
-              <Text style={styles.underlined}>
-                ____________________________________________________________________
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text>TELÉFONOS:</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                }}
+              >
+                something
               </Text>
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              LOCALIDAD/COMUNIDAD:
-              <Text style={styles.underlined}>___________________</Text>{" "}
-              <Text>
-                NACIONALIDAD
-                <Text style={styles.underlined}>____________________</Text>
+              <Text>/</Text>
+
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                }}
+              >
+                something
               </Text>
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              INGRESOS MENSUALES RD$:
-              <Text style={styles.underlined}>__________________</Text>{" "}
-              <Text>
-                OTROS INGRESOS
-                <Text style={styles.underlined}>_______________</Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text>EMAIL: </Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                }}
+              >
+                something
               </Text>
-            </Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text> LOCALIDAD/COMUNIDAD:</Text>
+              <Text
+                style={{
+                  marginBottom: 25,
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  color: "blue",
+                }}
+              >
+                something
+              </Text>
+              <Text>NACIONALIDAD</Text>
+              <Text
+                style={{
+                  marginBottom: 25,
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  color: "blue",
+                }}
+              >
+                something
+              </Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text> INGRESOS MENSUALES:</Text>
+              <Text
+                style={{
+                  marginBottom: 25,
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  color: "blue",
+                }}
+              >
+                something
+              </Text>
+              <Text>OTROS INGRESOS</Text>
+              <Text
+                style={{
+                  marginBottom: 25,
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  color: "blue",
+                }}
+              >
+                something
+              </Text>
+            </View>
             <Text
               style={{
                 marginBottom: 25,
@@ -154,35 +253,171 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
             >
               DATOS FAMILIARES
             </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              NOMBRE DE CONYUGE:{" "}
-              <Text style={styles.underlined}>
-                _____________________________________________________
+            <View style={{ flexDirection: "row" }}>
+              <Text>NOMBRE DE CONYUGE</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 15,
+                  color: "blue",
+                }}
+              >
+                actual info ajaja waos
               </Text>
-            </Text>
-            <Text style={{ marginBottom: 25, textAlign: "justify" }}>
-              TELÉFONOS:{" "}
-              <Text style={styles.underlined}>
-                ______________________________
-              </Text>{" "}
-              /
-              <Text style={styles.underlined}>
-                ________________________________
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text>TELÉFONOS:</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                something
               </Text>
-            </Text>
+              <Text>/</Text>
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  flex: 1,
+                  marginBottom: 25,
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                something
+              </Text>
+            </View>
             <Text
               style={{
                 marginBottom: 25,
                 textAlign: "justify",
-                textAlign: "justify",
               }}
             >
               COMPROMISO DEL SOCIO: ME COMPROMETO A PAGAR LA SUMA DE
-              <Text style={styles.underlined}>_____________________</Text>RD$
-              <Text>_______</Text>.00 POR CONCEPTO DE CUOTA DE ADMISIÓN, LA CUAL
-              NO ES REEMBOLSABLE Y ADEMAS COMPRAR __________(___) CERTIFICADOS
-              DE APORTACIÓN POR VALOR DE _________(RD$ ______.00) CADA UNO, Y
-              AHORRAR MENSUALMENTE LA SUMA DE ___________( RD$ ______.00).
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  color: "blue",
+                  fontSize: 11,
+                  textDecoration: "underline",
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              RD$
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  textDecoration: "underline",
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              (00) POR CONCEPTO DE CUOTA DE ADMISIÓN, LA CUAL NO ES REEMBOLSABLE
+              Y ADEMAS COMPRAR
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  textDecoration: "underline",
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              (
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  textDecoration: "underline",
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              ) CERTIFICADOS DE APORTACIÓN POR VALOR DE{" "}
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  textDecoration: "underline",
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              RD${" "}
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  color: "blue",
+                  fontSize: 11,
+                  textDecoration: "underline",
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              (00) CADA UNO, Y AHORRAR MENSUALMENTE LA SUMA DE{" "}
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  color: "blue",
+                  fontSize: 11,
+                  textDecoration: "underline",
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              RD$
+              <Text
+                style={{
+                  textAlign: "center",
+                  borderBottomColor: "black",
+                  borderBottomWidth: 1,
+                  textDecoration: "underline",
+                  color: "blue",
+                  fontSize: 11,
+                }}
+              >
+                {" "}
+                waos{" "}
+              </Text>
+              (00).
             </Text>
             <Text
               style={{
@@ -207,24 +442,103 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
                   alignItems: "center",
                 }}
               >
-                <Text style={{ marginBottom: 9 }}>NOMBRE</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  NOMBRE
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
                 <Text>s</Text>
               </View>
 
               <View style={{ justifyContent: "center", alignItems: "center" }}>
-                <Text style={{ marginBottom: 9 }}>CEDULA</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                  }}
+                >
+                  CEDULA
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
                 <Text>s</Text>
               </View>
 
               <View style={{ justifyContent: "center", alignItems: "center" }}>
                 <Text>DIRECCION</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
-                <Text style={{ marginBottom: 9 }}>s</Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
+                <Text
+                  style={{
+                    marginBottom: 9,
+                    textAlign: "center",
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                  }}
+                >
+                  s
+                </Text>
               </View>
             </View>
             <View
@@ -247,6 +561,7 @@ export const RegisterFormTemplate = ({ name, cedula, id }) => {
                 style={{
                   fontSize: 10,
                   marginBottom: 25,
+                  textAlign: "center",
                 }}
               >
                 ____________________ {"\n"} COMITÉ GESTOR
