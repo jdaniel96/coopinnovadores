@@ -10,7 +10,7 @@ const PDF = () => {
       filename="formularioDeInscripción.pdf"
     >
       <button type="button" className="btn btn-dark">
-        Descargar Formulario
+        Descargar Y Enviar Formulario
       </button>
     </PDFDownloadLink>
   );

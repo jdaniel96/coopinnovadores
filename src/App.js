@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/aboutUs" element={<AboutUsView />} />
+        {/* <Route path="*" element={<NotFound/>}/> */}
       </Routes>
       <Footer />
     </div>

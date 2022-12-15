@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./hero.module.css";
+import { Link } from "react-router-dom";
 
 function HeroItems(props) {
   return (
@@ -10,7 +11,7 @@ function HeroItems(props) {
             <h1>{props.title}</h1>
             <p>{props.textInfo}</p>
             <div className={Styles.buttonss}>
-              <button>Learn more</button>
+            <Link to="/AboutUs"><button>Learn more</button></Link>
             </div>
           </div>
         </div>

@@ -3,3 +3,6 @@
   --segundoColor:#105B34;
   --tercerColor:#039247;
 }
+html {
+  scroll-behavior: smooth;
+}
