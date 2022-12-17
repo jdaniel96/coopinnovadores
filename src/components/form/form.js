@@ -4,7 +4,7 @@ import axios from "axios";
 import { contactConfig } from "./contact/contactOption";
 import SocialtList from "./contact/socialList";
 import { RegisterFormTemplate } from "../registerFormTemplate/registerFormTemplate";
-import PDF from "../../utils/pdf";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 function Form() {
   const [status, setStatus] = useState({
@@ -163,6 +163,7 @@ function Form() {
                   required
                   value={inputs.message}
                 />
+
                 <button type="submit" disabled={status.submitting}>
                   {!status.submitting
                     ? !status.submitted
@@ -171,6 +172,9 @@ function Form() {
                     : "Registrando..."}
                 </button>
               </form>
+              <button type="button" className="btn btn-dark">
+                Descargar formulario
+              </button>
               {status.info.error && (
                 <div className="error">Error: {status.info.msg}</div>
               )}
