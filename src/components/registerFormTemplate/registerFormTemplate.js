@@ -10,7 +10,7 @@ import {
 
 import coopLogo from "./assets/cooplogo.png";
 
-export const RegisterFormTemplate = () => {
+export const RegisterFormTemplate = (props) => {
   const styles = StyleSheet.create({
     page: {
       flexDirection: "row",
@@ -110,12 +110,12 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                actual info ajaja waos
+                {props.Nombre}
               </Text>
             </View>
 
             <View style={{ flexDirection: "row" }}>
-              <Text>SEXO M () F (), CÉDULA/PASAPORTE:</Text>
+              <Text>SEXO: {props.Sexo}, CÉDULA/PASAPORTE:</Text>
               <Text
                 style={{
                   textAlign: "center",
@@ -126,7 +126,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                asdasda
+                {props.Cedula}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -141,7 +141,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                asdasda
+                {props.Direccion}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -156,7 +156,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.Telefono}
               </Text>
               <Text>/</Text>
 
@@ -170,7 +170,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.Celular}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -185,7 +185,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.Correo}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -200,7 +200,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.Localidad}
               </Text>
               <Text>NACIONALIDAD</Text>
               <Text
@@ -213,7 +213,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.Nacionalidad}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -228,7 +228,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.IngresoMensual}
               </Text>
               <Text>OTROS INGRESOS</Text>
               <Text
@@ -241,7 +241,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                something
+                {props.OtrosIngresos}
               </Text>
             </View>
             <Text
@@ -265,7 +265,7 @@ export const RegisterFormTemplate = () => {
                   color: "blue",
                 }}
               >
-                actual info ajaja waos
+                {props.ConyugeNombre}
               </Text>
             </View>
             <View style={{ flexDirection: "row" }}>
@@ -281,7 +281,7 @@ export const RegisterFormTemplate = () => {
                   fontSize: 11,
                 }}
               >
-                something
+                {props.ConyugeTelefono}
               </Text>
               <Text>/</Text>
               <Text
@@ -295,7 +295,7 @@ export const RegisterFormTemplate = () => {
                   fontSize: 11,
                 }}
               >
-                something
+                {props.ConyugeCelular}
               </Text>
             </View>
             <Text

@@ -1,17 +1,11 @@
-.navHeader {
+.navContenedor{
   z-index: 10;
   width: 100%;
   background-color: transparent;
   position: absolute;
 }
-
-.active{
-  position: fixed;
-  background-color: white;
-  transition: 0.6s;
-}
-
-.alt{
-  transition: 0.6s;
-  height: 5rem;
+@media (max-width : 998px) {
+  .navContenedor {
+    background-color: black;
+  }
 }

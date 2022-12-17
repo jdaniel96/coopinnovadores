@@ -5,6 +5,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 .sizeCarusel{
     height: 100%;
@@ -41,7 +42,7 @@ header {
 }
 .innerHeader {
     padding-top: 90px;
-    min-height: 90vh;
+    height: 90vh;
     width: 100%;
 }
 .textPosition{
@@ -148,7 +149,6 @@ header {
     }
     .innerHeader {
         padding-top: 90px;
-        padding-bottom: 30px;
         height: auto;
     }  
     .heroImgContainer img{

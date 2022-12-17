@@ -13,7 +13,11 @@
     margin-bottom: 20px;
     color: var(--segundoColor);
 }
-
+.mapa{
+    width: 500px;
+    height: 600px;
+    background-color: #06c214;
+}
 /* ----------------------------------------- */
 
 .WhatWeDoSection {
