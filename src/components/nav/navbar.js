@@ -3,15 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import AboutUsInfromation from "../aboutUs/information/information";
 import { Link } from "react-router-dom";
 
-function Navbar({
-  Hero,
-  WhoWeAre,
-  Formulario,
-  Gridgallery,
-  AboutUs,
-  RegisterSection,
-  InstructionSection,
-}) {
+function Navbar({ Hero, WhoWeAre, Formulario, Gridgallery, AboutUs, RegisterSection, InstructionSection }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
@@ -28,8 +20,9 @@ function Navbar({
         root: null,
       }
     );
-
-    observer.observe(hero.current);
+    if (hero.current){
+      observer.observe(hero.current);
+    }
   }, []);
 
   const showOnPage = (element) => {
@@ -40,63 +33,30 @@ function Navbar({
 
   return (
     <>
-      <div className={styles.navContenedor}>
-        <nav
-          className={
-            isVisible
-              ? `fixed-top navbar navbar-expand-lg navbar-dark bg-black p-md-3`
-              : `navbar navbar-expand-lg navbar-dark p-md-3 ${styles.navContenedor}`
-          }
-        >
-          <div class="container">
-            <h3>COOPERATIVA</h3>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="mx-auto"></div>
-              <ul class="navbar-nav">
-                <Link to="/#">
-                  <li class="nav-item">
-                    <h1 class="nav-link text-white">Home</h1>
-                  </li>
-                </Link>
-                <Link to="/AboutUs">
-                  <li class="nav-item">
-                    <h1 class="nav-link text-white">Acerca</h1>
-                  </li>
-                </Link>
-                {Formulario && (
-                  <li className="nav-item">
-                    <h1
-                      onClick={() => showOnPage(contactanos)}
-                      className="nav-link"
-                      style={{ color: "white" }}
-                    >
-                      Contactanos
-                    </h1>
-                  </li>
-                )}
-                <Link to="/register">
-                  <li class="nav-item">
-                    <h1 class="nav-link text-white">Registrate</h1>
-                  </li>
-                </Link>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      {Hero && (
+    <nav className={`navbar navbar-expand-lg bg-transparent ${styles.navBarIndex}`}>
+  <div class="container-fluid d-flex flex-row justify-content-between">
+    <div>
+      <a class="navbar-brand fs-1" href="#">Navbar</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <Link class="nav-link fs-2" aria-current="page" to="/">Home</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link fs-2" to="/aboutUs">Acerca</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link fs-2" to="/register">Registrate</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    {Hero && (
         <div ref={hero}>
           <Hero />
         </div>
@@ -118,7 +78,7 @@ function Navbar({
       )}
       {WhoWeAre && (
         <div>
-          <WhoWeAre
+          <WhoWeAre 
             title={AboutUsInfromation.whoWeAre.title}
             textInfo={AboutUsInfromation.whoWeAre.textInfo}
             sectionImg={AboutUsInfromation.whoWeAre.sectionImg}
@@ -141,3 +101,41 @@ function Navbar({
 }
 
 export default Navbar;
+
+{/* <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Web Zone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> */}

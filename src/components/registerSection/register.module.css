@@ -4,6 +4,8 @@
     margin-top: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/docs.jpg");
 }
 .registerContainer{
     height: 90%;
@@ -12,8 +14,8 @@
     box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.5);
 }
 .registerImg{
-    --opacidad-negro: 0.6;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/registerImg.jpg");
+    --opacidad-negro2: 0.4;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro2)), rgba(0, 0, 0, var(--opacidad-negro2))), url("./assets/registroImg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,7 +28,7 @@
     width: 55%;
     height: 100%;
     background-color: white;
-    padding:30px;
+    padding:20px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -40,52 +42,20 @@
 }
 .stepsCard{
     height: 20em;
-    width: 35em;
-    display: flex;
+    width: 17em;
 }
 .stepsIcon{
-    width: 5%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 4em;
+    text-align: center;
 }
 .stepsText{
-    background-color: white;
-    width: 95%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.5);
-}
-.text {
-    z-index: 3;
     text-align: center;
-    font-size: 15em;
-    text-transform: uppercase;
-    font-family: Verdana, sans-serif;
-    font-weight: bold;
+}
+.stepsText h3{
+    color: var(--tercerColor);
+}
+h3{
     color: var(--segundoColor);
-    text-shadow:    1px 1px 1px var(--primerColor),
-                    1px 2px 1px var(--primerColor),
-                    1px 3px 1px var(--primerColor),
-                    1px 4px 1px var(--primerColor),
-                    1px 5px 1px var(--primerColor),
-                    1px 6px 1px var(--primerColor),
-                    1px 7px 1px var(--primerColor),
-                    1px 8px 1px var(--primerColor),
-                    1px 9px 1px var(--primerColor),
-                    1px 10px 1px var(--primerColor),
-                    1px 11px 1px var(--primerColor),
-                    1px 12px 1px var(--primerColor),
-                    1px 13px 1px var(--primerColor),
-                    1px 14px 1px var(--primerColor),
-                    1px 15px 1px var(--primerColor),
-                    1px 16px 1px var(--primerColor),
-                    1px 18px 6px rgba(16, 16, 16, 0.4),
-                    1px 22px 10px rgba(16, 16, 16, 0.5),
-                    1px 25px 35px rgba(16, 16, 16, 0.5),
-                    1px 30px 60px rgba(16, 16, 16, 0.5);
-
 }
 @media (max-width : 767px){
     .registerImg {

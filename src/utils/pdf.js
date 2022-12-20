@@ -1,6 +1,5 @@
-import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import React from "react";
-import { useRef, Pdf } from "react";
 import { RegisterFormTemplate } from "../components/registerFormTemplate/registerFormTemplate";
 
 const PDF = () => {

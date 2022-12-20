@@ -71,9 +71,9 @@ function Form() {
     <section
       className={`align-items-center justify-content-center d-flex ${Styles.cover}`}
     >
-      <div class={`${Styles.contenedor}`}>
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+      <div className={`${Styles.contenedor}`}>
+        <div className="row row-cols-1 row-cols-md-2">
+          <div className="col">
             {/* area informativa */}
             <div
               className={`justify-content-evenly flex-column d-flex ${Styles.textContainer}`}
@@ -126,7 +126,7 @@ function Form() {
             </div>
           </div>
           {/* area del formulario */}
-          <div class="col">
+          <div className="col">
             <div className={`${Styles.formSection}`}>
               <h4 className={Styles.formTitle2}>Send Us A Message</h4>
               <form className={Styles.formContainer} onSubmit={handleOnSubmit}>
@@ -172,9 +172,6 @@ function Form() {
                     : "Registrando..."}
                 </button>
               </form>
-              <button type="button" className="btn btn-dark">
-                Descargar formulario
-              </button>
               {status.info.error && (
                 <div className="error">Error: {status.info.msg}</div>
               )}

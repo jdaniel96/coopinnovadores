@@ -8,7 +8,7 @@ function WhoWeAre(props) {
                     <h3>{props.title}</h3>
                     <p>{props.textInfo}</p>
                 </div>
-                <di><img src={props.sectionImg} className={Styles.whoWeAre_WhyImg} alt="Section img"/></di> 
+                <div><img src={props.sectionImg} className={Styles.whoWeAre_WhyImg} alt="Section img"/></div> 
             </div>
         </section>
     )
