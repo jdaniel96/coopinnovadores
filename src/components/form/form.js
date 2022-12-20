@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { contactConfig } from "./contact/contactOption";
 import SocialtList from "./contact/socialList";
-import { RegisterFormTemplate } from "../registerFormTemplate/registerFormTemplate";
-import { PDFDownloadLink } from "@react-pdf/renderer";
 
 function Form() {
   const [status, setStatus] = useState({

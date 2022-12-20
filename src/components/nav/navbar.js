@@ -44,14 +44,14 @@ function Navbar({
       <nav
         className={`navbar navbar-expand-lg bg-transparent ${styles.navBarIndex}`}
       >
-        <div class="container-fluid d-flex flex-row justify-content-between">
+        <div className="container-fluid d-flex flex-row justify-content-between">
           <div>
-            <a class="navbar-brand fs-1" href="#">
+            <a className="navbar-brand fs-1" href="#">
               Navbar
             </a>
           </div>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -59,22 +59,22 @@ function Navbar({
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link fs-2" aria-current="page" to="/">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link fs-2" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link fs-2" to="/aboutUs">
+              <li className="nav-item">
+                <Link className="nav-link fs-2" to="/aboutUs">
                   Acerca
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link fs-2" to="/register">
+              <li className="nav-item">
+                <Link className="nav-link fs-2" to="/register">
                   Registrate
                 </Link>
               </li>

@@ -3,7 +3,6 @@ import axios from "axios";
 import Styles from "./register.module.css";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { RegisterFormTemplate } from "../registerFormTemplate/registerFormTemplate";
-import PDF from "../../utils/pdf";
 
 function RegisterSection() {
   const sexo = ["Masculino", "Femenino", "Otro"];
