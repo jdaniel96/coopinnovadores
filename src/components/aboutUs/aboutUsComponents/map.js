@@ -15,14 +15,14 @@ function MapSection() {
     <section className={`${Styles.mapSection} d-flex`}>
       <div className={Styles.mapInfo}></div>
       <Map
-        mapboxAccessToken="pk.eyJ1IjoiYXJlY2hlMTAiLCJhIjoiY2xidjhwamJwMDlnNjN3bXJ3MmJsem54YSJ9.IBaUfEDiOQq5lVKIxwxpsA"
+        mapboxAccessToken="pk.eyJ1IjoiamRhbmllbDk2IiwiYSI6ImNsYm8zZnMxZDBwNzMzcnA4M3d1azI4NGsifQ._b9EaMVWqAX0HnZChTJNIQ"
         initialViewState={{
           longitude: lng,
           latitude: lat,
           zoom: 3.5,
         }}
         style={{ width: "50%", height: "100%" }}
-        mapStyle="mapbox://styles/mapbox/streets-v9"
+        mapStyle="mapbox://styles/jdaniel96/cl7rt1c04001t14mtn3jy490u"
       >
         <Marker longitude={lng} latitude={lat} />
         <NavigationControl position="bottom-right" />

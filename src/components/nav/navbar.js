@@ -42,11 +42,15 @@ function Navbar({
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg bg-transparent ${styles.navBarIndex}`}
+        style={{ width: "100%" }}
+        className={`navbar navbar-expand-lg bg-transparent position-absolute  ${styles.navBarIndex}`}
       >
-        <div className="container-fluid d-flex flex-row justify-content-between">
+        <div
+          style={{ width: "100%", paddingLeft: "20px" }}
+          className="container-fluid d-flex "
+        >
           <div>
-            <a className="navbar-brand fs-1" href="#">
+            <a className="navbar-brand fs-1 text-white pl-2 " href="#">
               Navbar
             </a>
           </div>
@@ -61,21 +65,28 @@ function Navbar({
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link fs-2" aria-current="page" to="/">
+          <div
+            className="collapse navbar-collapse items-center justify-content-end"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav d-flex gap-lg-5 text-white  gap-sm-1 justify-content-around">
+              <li className="nav-item mt-0">
+                <Link
+                  className="nav-link fs-4 text-white"
+                  aria-current="page"
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fs-2" to="/aboutUs">
+              <li className="nav-item mt-0">
+                <Link className="nav-link text-white fs-4" to="/aboutUs">
                   Acerca
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link fs-2" to="/register">
-                  Registrate
+              <li className="nav-item mt-0">
+                <Link className="nav-link text-white fs-4" to="/register">
+                  Únete
                 </Link>
               </li>
             </ul>
