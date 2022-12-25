@@ -1,5 +1,7 @@
 .cover {
-   min-height: 100vh;
+   height: auto;
+   padding-top: 2em;
+   padding-bottom: 2em;
    width: 100%;
    --opacidad-negro: 0.6;
    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/cover-img.jpg");

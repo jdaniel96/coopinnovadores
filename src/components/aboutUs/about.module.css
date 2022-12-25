@@ -13,11 +13,6 @@
     margin-bottom: 20px;
     color: var(--segundoColor);
 }
-.mapa{
-    width: 500px;
-    height: 600px;
-    background-color: #06c214;
-}
 /* ----------------------------------------- */
 
 .WhatWeDoSection {
@@ -25,10 +20,6 @@
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 .WhatWeDoTitle { width: 80%;}
 .WhatWeDoTitle h1{ font-size: 4rem;}
@@ -45,27 +36,40 @@
 .WeAreCreative h1{ font-size: 3rem; color: white; }
 
 /* ----------------------- Map ------------------- */
-
+.mapTitle { width: 90%; min-height: 21vh;}
+.mapTitle h1{ font-size: 4rem;}
+.mapTitle h1 span {color: var(--segundoColor)}
 .mapSection {
-    height: 80vh;
+    height:auto;
     width: 100%;
-    background-color: #06c214;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .mapInfo{
-    height: 100%;
+    min-height:60vh;
     width: 50%;
-    background-color:aquamarine;
+    --opacidad-negro: 0.6;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/weAreCreative.jpg");background-repeat: no-repeat; background-position: center; background-size: cover;
 }
+.mapView{
+    height: 60vh;
+    width: 55%;
+    gap: 3em;
+}
+.mapa {width: 60%; height: 60vh;}
 .mapContainer{
-    height: 100%;
-    width: 50%;
-
+    height: auto;
+    width: 100%;
 }
 /* -------------------------------------------- */
 
 @media screen and (max-width: 991px){
     .textContent{width: 100%;}
     .whoWeAre_WhyImg{margin-top: 30px;}
+    .mapContainer{width: 100%;}
+    .mapa{width: 100%; min-height: 50vh;}
+    .mapView{width: 80%; min-height: 20vh;}
+    .mapInfo{width: 100%; min-height: 20vh;}
  }
  @media screen and (max-width: 720px){
     .whoWeAre_WhyImg{ width: 100%;}

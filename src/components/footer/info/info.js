@@ -1,11 +1,11 @@
 const infoConfig = {
-    genericText: ["Duis aute irre dolor inasta reprehenderit in voluptate velit esse cillum.",
-    "Subscribe our newsletter to get updates about our services and offers."],
-    email: "contact@it-kol.com",
-    phoneNumber: "10 (87) 738-3940",
+    genericText: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."],
+    email: "contact@yoursite.com",
+    phoneNumber: "+1 (234) 567 8902",
     list: [
-        {title: "Navigation", list:["Home","About","Services","Blog","Contact"]},
-        {title: "Services", list:["Drone Mapping","Real State","Commercial","Construction"]}
+        {title: "Navigation", list:["Lorem ipsum","Lorem ipsum","Lorem ipsum","Lorem ipsum"]},
+        {title: "Services", list:["Lorem ipsum","Lorem ipsum","Lorem ipsum"]}
     ]
 }
 

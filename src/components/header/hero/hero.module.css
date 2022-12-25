@@ -1,0 +1,59 @@
+.heroContainer{height: 55vh;}
+.heroContainer h1 { font-size: 9vh; color: white;}
+.carouselFade{ height: 80vh; width: 100%;}
+.textPosition{
+    height: 90%;
+    width: 95%;
+    gap: 20px;
+}
+.textPosition h1 {
+    font-weight: 300;
+    font-size: 5.5vw;
+    letter-spacing: 4px;
+    color: white;
+}
+.textPosition h1 b {color: var(--tercerColor);}
+.textPosition p {
+    font-family: Quicksand, "Segoe UI", sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    color: white;
+    letter-spacing: 2px;
+}
+.buttonss button {
+    border-style: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: var(--tercerColor);
+    color: white;
+}
+.textContainer{
+    padding-top: 10px;
+    width: 50%;
+    height: 70%;
+    padding-left: 40px;
+}
+.heroImgContainer{width: 50%;height: 100%;}
+.heroImgContainer img{width: 80%;}
+
+@media (max-width : 950px) {
+    .carouselFade{
+        height: auto;
+    }
+    .heroImgContainer img{
+        width: 100%;
+    }
+    .heroImgContainer {
+        width: 55%;
+    }
+    .textContainer{
+        width: 45%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .textPosition {
+        gap: 10px;
+    }
+    
+}

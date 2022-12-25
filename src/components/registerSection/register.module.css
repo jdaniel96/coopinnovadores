@@ -7,6 +7,7 @@
     --opacidad-negro: 0.6;
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("./assets/docs.jpg");
 }
+.InstructionSection{margin-top: 70px;}
 .registerContainer{
     height: 90%;
     width: 85%;
@@ -15,14 +16,13 @@
 }
 .registerImg{
     --opacidad-negro2: 0.4;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro2)), rgba(0, 0, 0, var(--opacidad-negro2))), url("./assets/registroImg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro2)), rgba(0, 0, 0, var(--opacidad-negro2))), url("./assets/registroImg.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat;
     height: auto;
     width: 45%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    color: white;
+    font-size: 30vh;
 }
 .register{
     width: 55%;
@@ -53,9 +53,6 @@
 }
 .stepsText h3{
     color: var(--tercerColor);
-}
-h3{
-    color: var(--segundoColor);
 }
 @media (max-width : 767px){
     .registerImg {

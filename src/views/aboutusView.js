@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/nav/navbar";
-import HeroSection from "../components/hero/herosection";
 import AboutUs from "../components/aboutUs/aboutUs";
+import Header from "../components/header/header";
+import HeroConfig from "../components/header/hero/heroConfig/heroConfig";
 
 function AboutUsView() {
-  return <Navbar AboutUs={AboutUs} Hero={HeroSection} />;
+  return <Header AboutUs={AboutUs} HeroConfig={HeroConfig.About}/>
 }
 
 export default AboutUsView;

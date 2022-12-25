@@ -1,21 +1,19 @@
-import HeroSection from "../components/hero/herosection";
 import React from "react";
-import Navbar from "../components/nav/navbar";
+import HeroConfig from "../components/header/hero/heroConfig/heroConfig";
 import Form from "../components/form/form";
 import Gallery from "../components/gallery/gallery";
 import WhoWeAre from "../components/aboutUs/aboutUsComponents/whoWeAre&Why";
+import Header from "../components/header/header";
 
 function Home() {
-  return (
-    <>
-      <Navbar
-        Hero={HeroSection}
-        WhoWeAre={WhoWeAre}
-        Formulario={Form}
-        Gridgallery={Gallery}
-      />
-    </>
-  );
+  return ( 
+  <Header
+    WhoWeAre={WhoWeAre} 
+    Formulario={Form}
+    Gridgallery={Gallery}
+    HeroConfig={HeroConfig.Home} 
+  />
+  )
 }
 
 export default Home;

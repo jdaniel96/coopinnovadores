@@ -14,7 +14,7 @@ function Form() {
     nombre: "",
     correo: "",
     cedula: "",
-    menssage: "",
+    message: "",
   });
   const handleServerResponse = (ok, msg) => {
     if (ok) {
@@ -27,7 +27,7 @@ function Form() {
         nombre: "",
         correo: "",
         cedula: "",
-        menssage: "",
+        message: "",
       });
     } else {
       setStatus({
@@ -165,9 +165,9 @@ function Form() {
                 <button type="submit" disabled={status.submitting}>
                   {!status.submitting
                     ? !status.submitted
-                      ? "Resgistar"
-                      : "Registar"
-                    : "Registrando..."}
+                      ? "Enviar"
+                      : "Enviar"
+                    : "Enviando..."}
                 </button>
               </form>
               {status.info.error && (

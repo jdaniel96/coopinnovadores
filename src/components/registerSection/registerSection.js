@@ -444,7 +444,7 @@ function RegisterSection() {
             </div>
           )}
           {!status.info.error && status.info.msg && (
-            <p style={{ color: "red" }}>{status.info.msg}</p>
+            <p>{status.info.msg}</p>
           )}
         </div>
       </div>

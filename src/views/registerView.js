@@ -1,15 +1,11 @@
 import React from "react";
-import Navbar from "../components/nav/navbar";
+import HeroConfig from "../components/header/hero/heroConfig/heroConfig";
 import RegisterSection from "../components/registerSection/registerSection";
 import InstructionSection from "../components/registerSection/registerInstructions";
+import Header from "../components/header/header";
 
 function Register() {
-  return (
-    <Navbar
-      RegisterSection={RegisterSection}
-      InstructionSection={InstructionSection}
-    />
-  );
+  return <Header RegisterSection={RegisterSection} InstructionSection={InstructionSection} HeroConfig={HeroConfig.register}/>
 }
 
 export default Register;

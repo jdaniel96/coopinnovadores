@@ -16,7 +16,7 @@ function Gallery() {
               className={`d-flex flex-column justify-content-evenly ${Styles.contenedor}`}
             >
               <h1>
-                The best business <br /> solution for you
+              Lorem ipsum dolor <br/> dolor sit amet
               </h1>
               <p>{cardsInfo.genericTesxt}</p>
               <a href="/">

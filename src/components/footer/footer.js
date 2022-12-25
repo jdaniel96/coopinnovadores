@@ -15,7 +15,7 @@ function Footer() {
           <div className={`d-flex flex-column justify-content-between ${Styles.area}`}>
             <div className={`d-flex ${Styles.logoArea}`}>
               <div className={`rounded-circle ${Styles.color} d-flex justify-content-center align-items-center`}><MdTouchApp/></div>
-              <h2>IT-Kol</h2>
+              <h2>Lorem ipsum</h2>
             </div>
             <p>{infoConfig.genericText[0]}</p>
             <h3>{infoConfig.phoneNumber}</h3>
@@ -38,7 +38,7 @@ function Footer() {
         </div>
         <div className={`col ${Styles.colW}`}>
           <div className={`d-flex flex-column justify-content-between ${Styles.area} ${Styles.colR}`}>
-            <h3>Subscribe newsletter</h3>
+            <h3>Lorem ipsum</h3>
             <br/>
             <p>{infoConfig.genericText[1]}</p>
             <button className={`d-flex justify-content-between align-items-center ${Styles.emailBtn}`}>Email Address <BiRightArrowAlt className={Styles.iconBtn}/></button>
@@ -48,7 +48,7 @@ function Footer() {
       </div>
     </div>
     <div className={`text-center ${Styles.colR}`}>
-      <p>Copyright ©2022 All rights reserved | This template is made by <span className={Styles.autor}>Mamun Abdullah</span></p>
+      <p>Copyright ©2022 All rights reserved | This template is made by <span className={Styles.autor}>Lorem ipsum</span></p>
     </div>
   </footer>
   )
