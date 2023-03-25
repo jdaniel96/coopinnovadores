@@ -1,6 +1,14 @@
 {
   "name": "coopinnovadores",
   "version": "0.1.0",
+  "maintainers": ["Juan Daniel Guzman Reyes"],
+  "contributors": ["Brian Areche Minaya", "Cristopher Areche"],
+  "homepage": "",
+  "description": "Landing Page for CoopInnovadores",
+  "author": {
+    "name":"Juan Daniel Guzman Reyes",
+    "email": "juandaniel9619@gmail.com"
+  },
   "engines": {
     "node": ">=12.0.0 <18.0.0"
   },
