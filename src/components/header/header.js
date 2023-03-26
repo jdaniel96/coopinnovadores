@@ -16,7 +16,6 @@ function Header({
   HeroConfig,
   cooperativaLogo,
 }) {
-  console.log("co", cooperativaLogo);
   const [isVisible, setIsVisible] = useState(false);
 
   const hero = useRef();
