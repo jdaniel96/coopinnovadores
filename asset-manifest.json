@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.098a6f72.css",
+    "main.js": "/react-gh-pages/static/js/main.3f7d0963.js",
+    "static/js/483.bb2d398c.chunk.js": "/react-gh-pages/static/js/483.bb2d398c.chunk.js",
+    "static/js/787.6df7ef88.chunk.js": "/react-gh-pages/static/js/787.6df7ef88.chunk.js",
+    "static/media/docs.jpg": "/react-gh-pages/static/media/docs.81e50c9f2e7123f93e95.jpg",
+    "static/media/cover-img.jpg": "/react-gh-pages/static/media/cover-img.8c85adf0ae2837b7fc33.jpg",
+    "static/media/register.jpg": "/react-gh-pages/static/media/register.37271366be1baa0a2a69.jpg",
+    "static/media/aboutUs.jpg": "/react-gh-pages/static/media/aboutUs.5de1fb566b90f6d29104.jpg",
+    "static/media/weAreCreative.jpg": "/react-gh-pages/static/media/weAreCreative.dd0fc89900e2d5b75a1c.jpg",
+    "static/media/herofondo.jpg": "/react-gh-pages/static/media/herofondo.ba6cff167da59da0578d.jpg",
+    "static/media/registroImg.jpg": "/react-gh-pages/static/media/registroImg.959968846c8658a9f534.jpg",
+    "static/media/coopInnovadoresLogo.png": "/react-gh-pages/static/media/coopInnovadoresLogo.3669e3c44430103cd4f6.png",
+    "static/media/heroImg1.png": "/react-gh-pages/static/media/heroImg1.32171afc9da74593dc8e.png",
+    "static/media/whyUs.svg": "/react-gh-pages/static/media/whyUs.c31b736d2367c196cd8717496f6ca848.svg",
+    "static/media/whoWeAre.svg": "/react-gh-pages/static/media/whoWeAre.52c447d35e3be67b3be026e96ba5de5d.svg",
+    "static/media/cooplogo.png": "/react-gh-pages/static/media/cooplogo.1b9118f602d9b2d5179f.png",
+    "static/media/whatWeDo.svg": "/react-gh-pages/static/media/whatWeDo.817ce04c51e85dceeb1abde0cd2fe662.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.098a6f72.css.map": "/react-gh-pages/static/css/main.098a6f72.css.map",
+    "main.3f7d0963.js.map": "/react-gh-pages/static/js/main.3f7d0963.js.map",
+    "483.bb2d398c.chunk.js.map": "/react-gh-pages/static/js/483.bb2d398c.chunk.js.map",
+    "787.6df7ef88.chunk.js.map": "/react-gh-pages/static/js/787.6df7ef88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.098a6f72.css",
+    "static/js/main.3f7d0963.js"
+  ]
+}
