@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jdaniel96.github.io/static/css/main.64fbe54e.css",
-    "main.js": "/jdaniel96.github.io/static/js/main.e02b4619.js",
+    "main.js": "/jdaniel96.github.io/static/js/main.a9685ab1.js",
     "static/js/483.144a6aa2.chunk.js": "/jdaniel96.github.io/static/js/483.144a6aa2.chunk.js",
     "static/js/787.6df7ef88.chunk.js": "/jdaniel96.github.io/static/js/787.6df7ef88.chunk.js",
     "static/media/docs.jpg": "/jdaniel96.github.io/static/media/docs.81e50c9f2e7123f93e95.jpg",
@@ -19,12 +19,12 @@
     "static/media/whatWeDo.svg": "/jdaniel96.github.io/static/media/whatWeDo.817ce04c51e85dceeb1abde0cd2fe662.svg",
     "index.html": "/jdaniel96.github.io/index.html",
     "main.64fbe54e.css.map": "/jdaniel96.github.io/static/css/main.64fbe54e.css.map",
-    "main.e02b4619.js.map": "/jdaniel96.github.io/static/js/main.e02b4619.js.map",
+    "main.a9685ab1.js.map": "/jdaniel96.github.io/static/js/main.a9685ab1.js.map",
     "483.144a6aa2.chunk.js.map": "/jdaniel96.github.io/static/js/483.144a6aa2.chunk.js.map",
     "787.6df7ef88.chunk.js.map": "/jdaniel96.github.io/static/js/787.6df7ef88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64fbe54e.css",
-    "static/js/main.e02b4619.js"
+    "static/js/main.a9685ab1.js"
   ]
 }
