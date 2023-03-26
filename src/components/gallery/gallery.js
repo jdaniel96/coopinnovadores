@@ -16,7 +16,8 @@ function Gallery() {
               className={`d-flex flex-column justify-content-evenly ${Styles.contenedor}`}
             >
               <h1>
-              Lorem ipsum dolor <br/> dolor sit amet
+                Nuestros
+                <br /> Objetivos
               </h1>
               <p>{cardsInfo.genericTesxt}</p>
               <a href="/">

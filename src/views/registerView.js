@@ -5,7 +5,14 @@ import InstructionSection from "../components/registerSection/registerInstructio
 import Header from "../components/header/header";
 
 function Register() {
-  return <Header RegisterSection={RegisterSection} InstructionSection={InstructionSection} HeroConfig={HeroConfig.register}/>
+  return (
+    <Header
+      RegisterSection={RegisterSection}
+      InstructionSection={InstructionSection}
+      HeroConfig={HeroConfig.register}
+      cooperativaLogo={true}
+    />
+  );
 }
 
 export default Register;

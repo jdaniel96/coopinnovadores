@@ -4,7 +4,13 @@ import Header from "../components/header/header";
 import HeroConfig from "../components/header/hero/heroConfig/heroConfig";
 
 function AboutUsView() {
-  return <Header AboutUs={AboutUs} HeroConfig={HeroConfig.About}/>
+  return (
+    <Header
+      AboutUs={AboutUs}
+      cooperativaLogo={true}
+      HeroConfig={HeroConfig.About}
+    />
+  );
 }
 
 export default AboutUsView;

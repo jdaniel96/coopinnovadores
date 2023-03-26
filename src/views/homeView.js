@@ -6,14 +6,15 @@ import WhoWeAre from "../components/aboutUs/aboutUsComponents/whoWeAre&Why";
 import Header from "../components/header/header";
 
 function Home() {
-  return ( 
-  <Header
-    WhoWeAre={WhoWeAre} 
-    Formulario={Form}
-    Gridgallery={Gallery}
-    HeroConfig={HeroConfig.Home} 
-  />
-  )
+  return (
+    <Header
+      WhoWeAre={WhoWeAre}
+      Formulario={Form}
+      Gridgallery={Gallery}
+      HeroConfig={HeroConfig.Home}
+      cooperativaLogo={false}
+    />
+  );
 }
 
 export default Home;
