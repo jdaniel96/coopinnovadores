@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/coopinnovadores/static/css/main.7770409b.css",
-    "main.js": "/coopinnovadores/static/js/main.ee244cc7.js",
+    "main.js": "/coopinnovadores/static/js/main.7d236708.js",
     "static/js/483.892e819b.chunk.js": "/coopinnovadores/static/js/483.892e819b.chunk.js",
     "static/js/787.6df7ef88.chunk.js": "/coopinnovadores/static/js/787.6df7ef88.chunk.js",
     "static/media/docs.jpg": "/coopinnovadores/static/media/docs.81e50c9f2e7123f93e95.jpg",
@@ -19,12 +19,12 @@
     "static/media/whatWeDo.svg": "/coopinnovadores/static/media/whatWeDo.817ce04c51e85dceeb1abde0cd2fe662.svg",
     "index.html": "/coopinnovadores/index.html",
     "main.7770409b.css.map": "/coopinnovadores/static/css/main.7770409b.css.map",
-    "main.ee244cc7.js.map": "/coopinnovadores/static/js/main.ee244cc7.js.map",
+    "main.7d236708.js.map": "/coopinnovadores/static/js/main.7d236708.js.map",
     "483.892e819b.chunk.js.map": "/coopinnovadores/static/js/483.892e819b.chunk.js.map",
     "787.6df7ef88.chunk.js.map": "/coopinnovadores/static/js/787.6df7ef88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7770409b.css",
-    "static/js/main.ee244cc7.js"
+    "static/js/main.7d236708.js"
   ]
 }
