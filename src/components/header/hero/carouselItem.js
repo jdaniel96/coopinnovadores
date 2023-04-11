@@ -16,7 +16,7 @@ function CarouselItem(props) {
             {props.textInfo}
           </p>
           <div className={Styles.buttonss}>
-            <Link to="https://coopinnovadores.com/AboutUs">
+            <Link to="/AboutUs">
               <button>Saber más</button>
             </Link>
           </div>
