@@ -11,10 +11,12 @@ function CarouselItem(props) {
         <div
           className={`${Styles.textPosition} d-flex justify-content-center flex-column`}
         >
-          <h1>{props.title}</h1>
-          <p>{props.textInfo}</p>
+          <h1 style={{ fontSize: "40px" }}>{props.title}</h1>
+          <p style={{ fontSize: "24px", lineHeight: "150%" }}>
+            {props.textInfo}
+          </p>
           <div className={Styles.buttonss}>
-            <Link to="/coopinnovadores/AboutUs">
+            <Link to="/AboutUs">
               <button>Saber más</button>
             </Link>
           </div>

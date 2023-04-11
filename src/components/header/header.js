@@ -6,6 +6,7 @@ import AboutUsInfromation from "../aboutUs/information/information";
 import heroConfig from "./hero/heroConfig/heroConfig";
 import { Link } from "react-router-dom";
 import coopInnovadoresLogo from "../../assets/coopInnovadoresLogo.png";
+
 function Header({
   WhoWeAre,
   Formulario,
@@ -61,7 +62,7 @@ function Header({
                 backgroundColor: cooperativaLogo ? "#272727" : "",
               }}
             >
-              <Link to={"/coopinnovadores"} style={{ textDecoration: "none" }}>
+              <Link to={"/"} style={{ textDecoration: "none" }}>
                 <div className="d-flex  justify-content-center">
                   <div
                     className={`d-flex align-items-center text-white fs-3`}
@@ -73,6 +74,7 @@ function Header({
                       style={{
                         color: "white",
                         height: "100%",
+                        justifyContent: "flex-start",
                       }}
                     >
                       COOPINNOVADORES
@@ -107,22 +109,13 @@ function Header({
             <div className="collapse navbar-collapse" id="navbarNav">
               <div className="mx-auto"></div>
               <div className="navbar-nav">
-                <Link
-                  to={"/coopinnovadores"}
-                  style={{ textDecoration: "none" }}
-                >
+                <Link to={"/"} style={{ textDecoration: "none" }}>
                   <h2 className="nav-link text-white fs-5">Inicio</h2>
                 </Link>
-                <Link
-                  to={"/coopinnovadores/aboutUs"}
-                  style={{ textDecoration: "none" }}
-                >
+                <Link to={"/aboutUs"} style={{ textDecoration: "none" }}>
                   <h2 className="nav-link text-white fs-5">Sobre Nosotros</h2>
                 </Link>
-                <Link
-                  to={"/coopinnovadores/register"}
-                  style={{ textDecoration: "none" }}
-                >
+                <Link to={"/register"} style={{ textDecoration: "none" }}>
                   <h2 className="nav-link text-white fs-5">Registrate</h2>
                 </Link>
               </div>
