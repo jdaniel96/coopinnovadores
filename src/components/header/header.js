@@ -62,7 +62,10 @@ function Header({
                 backgroundColor: cooperativaLogo ? "#272727" : "",
               }}
             >
-              <Link to={"/"} style={{ textDecoration: "none" }}>
+              <Link
+                to={"https://coopinnovadores.com/"}
+                style={{ textDecoration: "none" }}
+              >
                 <div className="d-flex  justify-content-center">
                   <div
                     className={`d-flex align-items-center text-white fs-3`}
@@ -109,13 +112,22 @@ function Header({
             <div className="collapse navbar-collapse" id="navbarNav">
               <div className="mx-auto"></div>
               <div className="navbar-nav">
-                <Link to={"/"} style={{ textDecoration: "none" }}>
+                <Link
+                  to={"https://coopinnovadores.com"}
+                  style={{ textDecoration: "none" }}
+                >
                   <h2 className="nav-link text-white fs-5">Inicio</h2>
                 </Link>
-                <Link to={"/aboutUs"} style={{ textDecoration: "none" }}>
+                <Link
+                  to={"https://coopinnovadores.com/aboutUs"}
+                  style={{ textDecoration: "none" }}
+                >
                   <h2 className="nav-link text-white fs-5">Sobre Nosotros</h2>
                 </Link>
-                <Link to={"/register"} style={{ textDecoration: "none" }}>
+                <Link
+                  to={"https://coopinnovadores.com/register"}
+                  style={{ textDecoration: "none" }}
+                >
                   <h2 className="nav-link text-white fs-5">Registrate</h2>
                 </Link>
               </div>
