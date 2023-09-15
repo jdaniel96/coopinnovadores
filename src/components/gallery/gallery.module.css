@@ -2,46 +2,14 @@
     min-height: 85vh;
     width: 100%;
 }
-
-.gallery{
-    height: auto;
+.gallery {
     width: 90%;
-    background-color: white;
-}
-
-.contenedor{
-    min-height: 20rem;
-    width: 85%;
-    position: relative;
-    padding-top: 20px;
-}
-.contenedor h1 {
-    color: var(--segundoColor);
 }
 .iconSize{
     height: 70px;
     width: 70px;
     font-size: 25px;
     color: white;
-}
-.contenedor::before{
-    content:' ';
-    position: absolute;
-    height: 4px;
-    width: 50px;
-    background-color: var(--segundoColor);; 
-    top: 1rem;
-}
-.contenedor a:link, a:visited, a:active {
-    text-decoration:none;
-    color: var(--segundoColor);;
-}
-.arrow {
-    margin-left: 30px;
-}
-.bodyCard{
-    width: 84%;
-    height: 16rem;
 }
 .linea{
     position: relative;
@@ -53,7 +21,30 @@
     width: 50px;
     background-color: var(--segundoColor);; 
     top: -10px;
- }
- @media screen and (max-width: 768px){
+}
+.contenedor{
+    width: 85%;
+    position: relative;
+    padding-top: 20px;
+}
+.contenedor::before{
+    content:' ';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: var(--segundoColor);; 
+    top: 0.5rem;
+}
+.contenedor a:link, a:visited, a:active {
+    text-decoration:none;
+    color: var(--segundoColor);;
+}
+.arrow {
+    margin-left: 30px;
+}
+.contenedor h1 {
+    color: var(--segundoColor);
+}
+@media screen and (max-width: 768px){
     .contenedor{ width: 100%;}
  }
