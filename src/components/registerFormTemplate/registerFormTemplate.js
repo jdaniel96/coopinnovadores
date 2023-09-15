@@ -8,9 +8,15 @@ import {
   Image,
 } from "@react-pdf/renderer";
 
-import coopLogo from "./assets/cooplogo.png";
+import coopLogo from "../../assets/coopinnovadores-long-green-logo.png";
 
 export const RegisterFormTemplate = (props) => {
+  const currentDate = new Date();
+
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth() + 1; // Note: Months are zero-based, so we add 1
+  const year = currentDate.getFullYear();
+
   const styles = StyleSheet.create({
     page: {
       flexDirection: "row",
@@ -23,9 +29,10 @@ export const RegisterFormTemplate = (props) => {
       alignItems: "center",
     },
     logo: {
-      marginTop: "-80",
+      marginTop: "-20",
       width: 250,
-      height: 250,
+      height: 120,
+      marginBottom: 70,
     },
     header: {
       marginTop: "-80",
@@ -52,9 +59,9 @@ export const RegisterFormTemplate = (props) => {
             (COOPINNOVADORES)
           </Text>
           <Text style={styles.date}>
-            Fecha <Text style={styles.underlined}>dd</Text> /{" "}
-            <Text style={styles.underlined}>mm</Text> /{" "}
-            <Text style={styles.underlined}>yyyy</Text>
+            Fecha <Text>{day}-</Text>
+            <Text>{month}</Text>
+            <Text>-{year}</Text>
           </Text>
           <View
             style={{
@@ -69,11 +76,9 @@ export const RegisterFormTemplate = (props) => {
               style={{
                 fontSize: 11,
                 textAlign: "center",
-                borderBottomColor: "black",
-                borderBottomWidth: 1,
               }}
             >
-              waos
+              ______
             </Text>
           </View>
           <Text
@@ -115,7 +120,7 @@ export const RegisterFormTemplate = (props) => {
             </View>
 
             <View style={{ flexDirection: "row" }}>
-              <Text>SEXO: {props.Sexo}, CÉDULA/PASAPORTE:</Text>
+              <Text>SEXO: {props.Sexo ?? "______"}, CÉDULA/PASAPORTE:</Text>
               <Text
                 style={{
                   textAlign: "center",
@@ -312,11 +317,9 @@ export const RegisterFormTemplate = (props) => {
                   borderBottomWidth: 1,
                   color: "blue",
                   fontSize: 11,
-                  textDecoration: "underline",
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               RD$
               <Text
@@ -324,13 +327,12 @@ export const RegisterFormTemplate = (props) => {
                   textAlign: "center",
                   borderBottomColor: "black",
                   borderBottomWidth: 1,
-                  textDecoration: "underline",
+
                   color: "blue",
                   fontSize: 11,
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               (00) POR CONCEPTO DE CUOTA DE ADMISIÓN, LA CUAL NO ES REEMBOLSABLE
               Y ADEMAS COMPRAR
@@ -339,13 +341,12 @@ export const RegisterFormTemplate = (props) => {
                   textAlign: "center",
                   borderBottomColor: "black",
                   borderBottomWidth: 1,
-                  textDecoration: "underline",
+
                   color: "blue",
                   fontSize: 11,
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               (
               <Text
@@ -359,7 +360,6 @@ export const RegisterFormTemplate = (props) => {
                 }}
               >
                 {" "}
-                waos{" "}
               </Text>
               ) CERTIFICADOS DE APORTACIÓN POR VALOR DE{" "}
               <Text
@@ -367,13 +367,12 @@ export const RegisterFormTemplate = (props) => {
                   textAlign: "center",
                   borderBottomColor: "black",
                   borderBottomWidth: 1,
-                  textDecoration: "underline",
+
                   color: "blue",
                   fontSize: 11,
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               RD${" "}
               <Text
@@ -383,11 +382,9 @@ export const RegisterFormTemplate = (props) => {
                   borderBottomWidth: 1,
                   color: "blue",
                   fontSize: 11,
-                  textDecoration: "underline",
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               (00) CADA UNO, Y AHORRAR MENSUALMENTE LA SUMA DE{" "}
               <Text
@@ -397,11 +394,9 @@ export const RegisterFormTemplate = (props) => {
                   borderBottomWidth: 1,
                   color: "blue",
                   fontSize: 11,
-                  textDecoration: "underline",
                 }}
               >
-                {" "}
-                waos{" "}
+                ____
               </Text>
               RD$
               <Text
@@ -409,13 +404,12 @@ export const RegisterFormTemplate = (props) => {
                   textAlign: "center",
                   borderBottomColor: "black",
                   borderBottomWidth: 1,
-                  textDecoration: "underline",
+
                   color: "blue",
                   fontSize: 11,
                 }}
               >
-                {" "}
-                waos{" "}
+                ______
               </Text>
               (00).
             </Text>
@@ -429,118 +423,128 @@ export const RegisterFormTemplate = (props) => {
               NOTA: AUTORIZO QUE EN CASO DE MI FALLECIMIENTO O EN SITUACIÓN DE
               SALUD QUE ME INCAPACITE, SE ENTREGUE MIS AHORROS Y BENEFICIOS A:
             </Text>
+
             <View
               style={{
-                flexDirection: "row",
                 justifyContent: "space-around",
-                textDecoration: "underline",
+                alignItems: "center",
+                width: "100%",
+                flexDirection: "row",
               }}
             >
-              <View
-                style={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
+              <View style={{ width: "32%" }}>
                 <Text
                   style={{
                     marginBottom: 9,
                     textAlign: "center",
-                    borderBottomColor: "black",
-                    borderBottomWidth: 1,
                   }}
                 >
-                  NOMBRE
+                  NOMBRE:
                 </Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    marginBottom: 15,
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
                   }}
-                >
-                  s
-                </Text>
+                ></Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
+                    marginBottom: 15,
                   }}
-                >
-                  s
-                </Text>
-                <Text>s</Text>
+                ></Text>
+                <Text
+                  style={{
+                    textAlign: "center",
+                    borderBottom: 1,
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                    width: "100%",
+                  }}
+                ></Text>
               </View>
-
-              <View style={{ justifyContent: "center", alignItems: "center" }}>
+              <View style={{ width: "32%" }}>
                 <Text
                   style={{
                     marginBottom: 9,
                     textAlign: "center",
                   }}
                 >
-                  CEDULA
+                  CÉDULA:
                 </Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    marginBottom: 15,
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
                   }}
-                >
-                  s
-                </Text>
+                ></Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
+                    marginBottom: 15,
                   }}
-                >
-                  s
-                </Text>
-                <Text>s</Text>
+                ></Text>
+                <Text
+                  style={{
+                    textAlign: "center",
+                    borderBottom: 1,
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                    width: "100%",
+                  }}
+                ></Text>
               </View>
-
-              <View style={{ justifyContent: "center", alignItems: "center" }}>
-                <Text>DIRECCION</Text>
+              <View style={{ width: "32%" }}>
                 <Text
                   style={{
                     marginBottom: 9,
                     textAlign: "center",
-                    borderBottomColor: "black",
-                    borderBottomWidth: 1,
                   }}
                 >
-                  s
+                  DIRECCIÓN:
                 </Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    marginBottom: 15,
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
                   }}
-                >
-                  s
-                </Text>
+                ></Text>
                 <Text
                   style={{
-                    marginBottom: 9,
-                    textAlign: "center",
+                    borderBottom: 1,
                     borderBottomColor: "black",
                     borderBottomWidth: 1,
+                    width: "100%",
+                    marginBottom: 15,
                   }}
-                >
-                  s
-                </Text>
+                ></Text>
+                <Text
+                  style={{
+                    textAlign: "center",
+                    borderBottom: 1,
+                    borderBottomColor: "black",
+                    borderBottomWidth: 1,
+                    width: "100%",
+                  }}
+                ></Text>
               </View>
             </View>
+
             <View
               style={{
                 flexDirection: "row",

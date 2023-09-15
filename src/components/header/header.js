@@ -5,8 +5,8 @@ import SvgComponent from "./assets/svgWave";
 import AboutUsInfromation from "../aboutUs/information/information";
 import heroConfig from "./hero/heroConfig/heroConfig";
 import { Link } from "react-router-dom";
-import coopInnovadoresLogo from "../../assets/coopInnovadoresLogo.png";
-
+import coopInnovadoresLogo from "../../assets/coopinnovadores-long-green-logo.png";
+import coopInnovadoresLogoWhite from "../../assets/coopinnovadores-long-white-logo.png";
 function Header({
   WhoWeAre,
   Formulario,
@@ -55,16 +55,10 @@ function Header({
           }
         >
           <div className="container d-flex flex-row align-items-center ">
-            <div
-              style={{
-                borderRadius: "32px",
-                // boxShadow: cooperativaLogo ? "0 0px 6px 6px #272727" : "",
-                backgroundColor: cooperativaLogo ? "#272727" : "",
-              }}
-            >
+            <div>
               <Link to={"/"} style={{ textDecoration: "none" }}>
                 <div className="d-flex  justify-content-center">
-                  <div
+                  {/* <div
                     className={`d-flex align-items-center text-white fs-3`}
                     style={{
                       padding: "5px 10px",
@@ -79,10 +73,14 @@ function Header({
                     >
                       COOPINNOVADORES
                     </div>
-                  </div>
-                  <div style={{ width: "auto", height: "50px" }}>
+                  </div> */}
+                  <div style={{ width: "auto", height: "120px" }}>
                     <img
-                      src={coopInnovadoresLogo}
+                      src={
+                        cooperativaLogo
+                          ? coopInnovadoresLogoWhite
+                          : coopInnovadoresLogo
+                      }
                       style={{
                         marginLeft: "2px",
                         height: "100%",
@@ -116,7 +114,7 @@ function Header({
                   <h2 className="nav-link text-white fs-5">Sobre Nosotros</h2>
                 </Link>
                 <Link to={"/register"} style={{ textDecoration: "none" }}>
-                  <h2 className="nav-link text-white fs-5">Registrate</h2>
+                  <h2 className="nav-link text-white fs-5">Únete</h2>
                 </Link>
               </div>
             </div>

@@ -1,6 +1,6 @@
- const heroConfig = {
-    Home:"Home",
-    About:"¿Quiénes somos?",
-    register:"Registrate con nosotros"
-}
+const heroConfig = {
+  Home: "Home",
+  About: "¿Quiénes somos?",
+  register: "Únetenos!",
+};
 export default heroConfig;

@@ -20,9 +20,6 @@ function Gallery() {
                 <br /> Objetivos
               </h1>
               <p>{cardsInfo.genericTesxt}</p>
-              <a href="/">
-                See More Information <BsArrowRight className={Styles.arrow} />
-              </a>
             </div>
           </div>
           <div className="col">

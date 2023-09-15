@@ -80,7 +80,7 @@ function Form() {
                 {contactConfig.frase}
               </h6>
               <h2 className={`position-relative ${Styles.contactUsTitle}`}>
-                Contact Us
+                Contáctanos
               </h2>
               <p className={`position-relative ${Styles.contactUsText}`}>
                 {contactConfig.description}
@@ -91,25 +91,10 @@ function Form() {
                 <div
                   className={`justify-content-between flex-column d-flex ${Styles.cont1}`}
                 >
-                  <b>REACH US THROUGH</b>
+                  <b>Vías de contacto:</b>
                   <br />
                   <>
                     {contactConfig.listContactItems.map((item, index) => {
-                      return (
-                        <SocialtList
-                          key={index}
-                          logo={item.logo}
-                          text={item.text}
-                        />
-                      );
-                    })}
-                  </>
-                </div>
-                <div className={`flex-column d-flex ${Styles.cont2}`}>
-                  <b>SOCIAL NETWORKS</b>
-                  <br />
-                  <>
-                    {contactConfig.listSocialItems.map((item, index) => {
                       return (
                         <SocialtList
                           key={index}
@@ -126,11 +111,11 @@ function Form() {
           {/* area del formulario */}
           <div className="col">
             <div className={`${Styles.formSection}`}>
-              <h4 className={Styles.formTitle2}>Send Us A Message</h4>
+              <h4 className={Styles.formTitle2}>Envíanos un mensaje</h4>
               <form className={Styles.formContainer} onSubmit={handleOnSubmit}>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Nombre Completo"
                   id="nombre"
                   onChange={handleOnChange}
                   required
@@ -138,7 +123,7 @@ function Form() {
                 />
                 <input
                   type="email"
-                  placeholder="someone@example.com"
+                  placeholder="Correo Electrónico"
                   id="correo"
                   name="_replyto"
                   onChange={handleOnChange}
@@ -147,7 +132,7 @@ function Form() {
                 />
                 <input
                   type="text"
-                  placeholder="1-000-000-0000"
+                  placeholder="Número de teléfono"
                   id="cedula"
                   onChange={handleOnChange}
                   required
@@ -155,7 +140,7 @@ function Form() {
                 />
                 <textarea
                   name="message"
-                  placeholder="Message"
+                  placeholder="Mensaje"
                   id="message"
                   onChange={handleOnChange}
                   required

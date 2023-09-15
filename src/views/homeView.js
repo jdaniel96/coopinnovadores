@@ -7,13 +7,15 @@ import Header from "../components/header/header";
 
 function Home() {
   return (
-    <Header
-      WhoWeAre={WhoWeAre}
-      Formulario={Form}
-      Gridgallery={Gallery}
-      HeroConfig={HeroConfig.Home}
-      cooperativaLogo={false}
-    />
+    <>
+      <Header
+        WhoWeAre={WhoWeAre}
+        Formulario={Form}
+        Gridgallery={Gallery}
+        HeroConfig={HeroConfig.Home}
+        cooperativaLogo={false}
+      />
+    </>
   );
 }
 

@@ -1,12 +1,12 @@
-import { PDFDownloadLink } from "@react-pdf/renderer";
 import React from "react";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import { RegisterFormTemplate } from "../components/registerFormTemplate/registerFormTemplate";
 
 const PDF = () => {
   return (
     <PDFDownloadLink
       document={<RegisterFormTemplate />}
-      filename="formularioDeInscripción.pdf"
+      fileName="formulario-coopinnovadores"
     >
       <button type="button" className="btn btn-dark">
         Descargar y Enviar Formulario
