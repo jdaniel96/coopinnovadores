@@ -9,34 +9,34 @@ function Gallery() {
     <section
       className={`d-flex justify-content-center align-items-center ${Styles.gallerySection}`}
     >
-      <div className={Styles.gallery}>
-        <div className="row row-cols-1 row-cols-md-2">
-          <div className="col">
-            <div
+      <div className={`row ${Styles.gallery}`}>
+        <div className="col-12 col-lg-6 mb-4">
+        <div
               className={`d-flex flex-column justify-content-evenly ${Styles.contenedor}`}
             >
               <h1>
-                Nuestros
-                <br /> Objetivos
+                Nuestros<br/> 
+                Objetivos
               </h1>
               <p>{cardsInfo.genericTesxt}</p>
             </div>
-          </div>
-          <div className="col">
-            <div className={`row row-cols-2`}>
-              {cardsInfo.cards.map((item, index) => {
+        </div>
+        <div className="col-12 col-lg-6 mt-4">
+          <div className="row">
+            {
+              cardsInfo.cards.map((item, index)=>{
                 return (
                   <Cards
                     key={index}
-                    iconImg={item.icon}
-                    cardTitle={item.title}
-                    cardText={item.text}
-                    bColor={item.bColor}
-                    iShadow={item.iShadow}
+                    Icon={item.icon}
+                    Shadow={item.iShadow} 
+                    BgColor={item.bColor}    
+                    Title={item.title}
+                    Text={item.text}               
                   />
-                );
-              })}
-            </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>

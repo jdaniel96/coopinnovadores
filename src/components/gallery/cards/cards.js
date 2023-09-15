@@ -1,23 +1,23 @@
 import React from "react";
 import Styles from "../gallery.module.css";
-function Cards (props){
+function Cards ({Icon,Shadow, BgColor,Title, Text}){
     const cardStyles = {
         icon: {
-            backgroundColor: props.bColor,
-            boxShadow: props.iShadow
+            backgroundColor: BgColor,
+            boxShadow: Shadow
         },
       }
     return(
-        <div className="col">
-            <div className={`${Styles.bodyCard} d-flex flex-column justify-content-evenly`}>
-                <div className={`rounded-circle ${Styles.iconSize} d-flex justify-content-center align-items-center`} style={cardStyles.icon}>
-                    {props.iconImg}
-                </div>
-                <h6>{props.cardTitle}</h6>
-                <div className={Styles.linea}>
-                    <p>{props.cardText}</p>
-                </div>
+        <div className="col-12 col-sm-6 mb-4">
+            <div className={`rounded-circle ${Styles.iconSize} d-flex justify-content-center align-items-center`} style={cardStyles.icon}>
+                    {Icon}
             </div>
+            <div className="mt-3 pe-0 pe-sm-3">
+                <h6 className="">{Title}</h6>
+                <p className={`mt-4 ${Styles.linea}`}>
+                    {Text}
+                </p>
+            </div> 
         </div>
     )
 }
