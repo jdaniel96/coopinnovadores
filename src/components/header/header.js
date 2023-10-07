@@ -5,8 +5,8 @@ import SvgComponent from "./assets/svgWave";
 import AboutUsInfromation from "../aboutUs/information/information";
 import heroConfig from "./hero/heroConfig/heroConfig";
 import { Link } from "react-router-dom";
-import coopInnovadoresLogo from "../../assets/coopinnovadores-long-green-logo.png";
-import coopInnovadoresLogoWhite from "../../assets/coopinnovadores-long-white-logo.png";
+import coopInnovadoresLogo from "../../assets/coop-innovadores-logo-colored.png";
+import coopInnovadoresLogoWhite from "../../assets/coop-innovadores-logo-colored.png";
 function Header({
   WhoWeAre,
   Formulario,
