@@ -5,7 +5,7 @@ import { MdTouchApp } from "react-icons/md";
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import infoConfig from "./info/info";
-import coopinnovadoresLogo from "../../assets/coopInnovadoresLogo.png";
+import coopinnovadoresLogo from "../../assets/smallcooplogocolored.png";
 
 function Footer() {
   return (
